@@ -9,7 +9,55 @@
 ---[[ ╚██╗  ██  ╚════██║  ██║   ██║ ╚════██║  ██╔══██║  ██╔██╗  ]]---
 ---[[ ╚██║  ██  ███████║  ╚██████╔╝ ███████║  ██║  ██║ ██╔╝ ██╗ ]]---
 ---[[    ╚═══╝  ╚══════╝   ╚═════╝  ╚══════╝    ╚════╝ ╚═╝  ╚═╝ ]]---
---Source code--
+--Source code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -63,7 +111,7 @@
 local KeybindMenu = Enum.KeyCode.End
 local Configs ={
 	ExecutorSettings = {
-		AutoInject = true;
+		AutoInject = false;
 		AutoExec = false;
 		AutoUpdater = false;
 	};
@@ -82,7 +130,7 @@ local Configs ={
 --
 
 local AsuraX = {
-ScreenGui = Instance.new("ScreenGui", game:GetService("CoreGui"));
+ScreenGui = Instance.new("ScreenGui"), --game:GetService("CoreGui"));
  MainFrame = Instance.new("Frame"),
  TextLabelTextbox = Instance.new("TextLabel"),
  UICorner = Instance.new("UICorner"),
@@ -138,6 +186,7 @@ ScreenGui = Instance.new("ScreenGui", game:GetService("CoreGui"));
  ImageButton = Instance.new("ImageButton"),
  UIGradient_7 = Instance.new("UIGradient"),
  UICorner_11 = Instance.new("UICorner"),
+ TextIncorrect = Instance.new("TextLabel"),
  ClearFrame = Instance.new("Frame"),
  ImageButton_2 = Instance.new("ImageButton"),
  UIGradient_8 = Instance.new("UIGradient"),
@@ -157,6 +206,7 @@ ScreenGui = Instance.new("ScreenGui", game:GetService("CoreGui"));
  UICorner_14 = Instance.new("UICorner"),
  BackgroundTimer = Instance.new("Frame"),
  UICorner_15 = Instance.new("UICorner"),
+ UICorner98851 = Instance.new("UICorner"),
  Others = Instance.new("Folder"),
  Images = Instance.new("Folder"),
  ImageLabel = Instance.new("ImageLabel"),
@@ -243,6 +293,11 @@ UIStrokeCustom11 = Instance.new("UIStroke"),
 	UIStrokeCustom34 = Instance.new("UIStroke"),
 	UIStrokeCustom35 = Instance.new("UIStroke"),
 	UIStrokeCustom36 = Instance.new("UIStroke"),
+	UIStrokeCustom37 = Instance.new("UIStroke"),
+	UIStrokeCustom38 = Instance.new("UIStroke"),
+	UIStrokeCustom39 = Instance.new("UIStroke"),
+	UIStrokeCustom40 = Instance.new("UIStroke"),
+	UIStrokeCustom41 = Instance.new("UIStroke"),
  UIStrokeCustomImage1 = Instance.new("UIStroke"),
  UIStrokeCustomImage2 = Instance.new("UIStroke"),
  UIStrokeCustomImage3 = Instance.new("UIStroke"),
@@ -280,6 +335,11 @@ UIStrokeCustom11 = Instance.new("UIStroke"),
 	UIStrokeCustomImage34= Instance.new("UIStroke"),
 	UIStrokeCustomImage35= Instance.new("UIStroke"),
 	UIStrokeCustomImage36= Instance.new("UIStroke"),
+	UIStrokeCustomImage37= Instance.new("UIStroke"),
+	UIStrokeCustomImage38= Instance.new("UIStroke"),
+	UIStrokeCustomImage39= Instance.new("UIStroke"),
+	UIStrokeCustomImage40= Instance.new("UIStroke"),
+	UIStrokeCustomImage41= Instance.new("UIStroke"),
 	UIGradientCustom1 = Instance.new("UIGradient"),
 	UIGradientCustom2 = Instance.new("UIGradient"),
 	UIGradientCustom3 = Instance.new("UIGradient"),
@@ -398,6 +458,9 @@ UIStrokeCustom11 = Instance.new("UIStroke"),
 	RanButton_121 = Instance.new("ImageButton"),
 	InfoButton_121 = Instance.new("ImageButton"),
 	ImageLabel_121 = Instance.new("ImageLabel"),
+	ButtonPress1 = Instance.new("TextButton"),
+	ButtonPress2 = Instance.new("TextButton"),
+	ButtonPress3 = Instance.new("TextButton"),
 	UICorner_242 = Instance.new("UICorner"),
 	SettingsFrame = Instance.new("Frame"),
 	HubFrame_2 = Instance.new("Frame"),
@@ -611,17 +674,17 @@ UIStrokeCustom11 = Instance.new("UIStroke"),
 	FramePreview2 = Instance.new("Frame"),
 	UICornerPreview5 = Instance.new("UICorner"),
 	KeySystem = Instance.new("Folder"),
-	PasswordLogin = Instance.new("Frame"),
+	PasswordLogin2 = Instance.new("Frame"),
 	UICorner_2431 = Instance.new("UICorner"),
 	TextBoxPassword = Instance.new("TextBox"),
-	ImagePassword = Instance.new("ImageLabel"),
-	KeyLogin = Instance.new("Frame"),
+	ImagePassword2 = Instance.new("ImageLabel"),
+	KeyLogin2 = Instance.new("Frame"),
 	UICorner_3421 = Instance.new("UICorner"),
 	TextBoxLogin = Instance.new("TextBox"),
-	ImageUsername = Instance.new("ImageLabel"),
-	LoginFrame = Instance.new("Frame"),
+	ImageUsername2 = Instance.new("ImageLabel"),
+	LoginFrame2 = Instance.new("Frame"),
 	UICorner_4413 = Instance.new("UICorner"),
-	TextLaunch = Instance.new("TextButton"),
+	TextLaunch2 = Instance.new("TextButton"),
 	LoadingBar = Instance.new("Folder"),
 	LoadingBackground = Instance.new("Frame"),
 	UICorner3123 = Instance.new("UICorner"),
@@ -660,6 +723,96 @@ UIStrokeCustom11 = Instance.new("UIStroke"),
 	UICorner_4213 = Instance.new("UICorner"),
 	RanButton2 = Instance.new("ImageButton"),
 	UIGradient_938 = Instance.new("UIGradient"),
+	GameFrame15 = Instance.new("Frame"),
+	UICorner14171 = Instance.new("UICorner"),
+	UIGradient7175 = Instance.new("UIGradient"),
+	RanButton166 = Instance.new("ImageButton"),
+	InfoButton177 = Instance.new("ImageButton"),
+	ImageLabel175 = Instance.new("ImageLabel"),
+	UICorner7878 = Instance.new("UICorner"),
+	GameFrame16 = Instance.new("Frame"),
+	UICorner31241241 = Instance.new("UICorner"),
+	UIGradient312412 = Instance.new("UIGradient"),
+	RanButton144 = Instance.new("ImageButton"),
+	InfoButton155 = Instance.new("ImageButton"),
+	ImageLabel174 = Instance.new("ImageLabel"),
+	UICorner8789 = Instance.new("UICorner"),
+	GameFrame17 = Instance.new("Frame"),
+	UICorner_2412312 = Instance.new("UICorner"),
+	UIGradient_23123 = Instance.new("UIGradient"),
+	RanButton31241 = Instance.new("ImageButton"),
+	InfoButton314141 = Instance.new("ImageButton"),
+	ImageLabel4314 = Instance.new("ImageLabel"),
+	UICorner_33123 = Instance.new("UICorner"),
+	BackgroundMain = Instance.new("Frame"),
+	UICorner17474 = Instance.new("UICorner"),
+	BackgroundImage = Instance.new("ImageLabel"),
+	UICorner98987 = Instance.new("UICorner"),
+	SelectPanel = Instance.new("Folder"),
+	SidePanel = Instance.new("ScrollingFrame"),
+	AsuraXFrame = Instance.new("Frame"),
+	UICorner689987 = Instance.new("UICorner"),
+	UIGradient28282 = Instance.new("UIGradient"),
+	Images141421 = Instance.new("Folder"),
+	StatusIcon = Instance.new("ImageLabel"),
+	IconStatus = Instance.new("ImageLabel"),
+	Texts231231 = Instance.new("Folder"),
+	TextMain1 = Instance.new("TextLabel"),
+	TextMain2 = Instance.new("TextLabel"),
+	TextAbout1 = Instance.new("TextLabel"),
+	UIListLayout14 = Instance.new("UIListLayout"),
+	AsuraXFrame2 = Instance.new("Frame"),
+	UICorner35445 = Instance.new("UICorner"),
+	UIGradient147147 = Instance.new("UIGradient"),
+	Images_2412412 = Instance.new("Folder"),
+	StatusIcon_2 = Instance.new("ImageLabel"),
+	IconStatus_2 = Instance.new("ImageLabel"),
+	Texts_21231 = Instance.new("Folder"),
+	TextMain1_2 = Instance.new("TextLabel"),
+	TextMain2_2 = Instance.new("TextLabel"),
+	TextAbout1_2 = Instance.new("TextLabel"),
+	AsuraXFrame3 = Instance.new("Frame"),
+	UICorner11881 = Instance.new("UICorner"),
+	UIGradient17147 = Instance.new("UIGradient"),
+	Images_3 = Instance.new("Folder"),
+	StatusIcon_3 = Instance.new("ImageLabel"),
+	IconStatus_3 = Instance.new("ImageLabel"),
+	UICorner3141241 = Instance.new("UICorner"),
+	Texts_3 = Instance.new("Folder"),
+	TextMain1_3 = Instance.new("TextLabel"),
+	TextMain2_3 = Instance.new("TextLabel"),
+	TextAbout1_3 = Instance.new("TextLabel"),
+	LoginPanel = Instance.new("Folder"),
+	LoginFrame = Instance.new("Frame"),
+	UICorner1551 = Instance.new("UICorner"),
+	TextLaunch = Instance.new("TextButton"),
+	UIGradient57574 = Instance.new("UIGradient"),
+	PasswordLogin = Instance.new("Frame"),
+	UICorner14474 = Instance.new("UICorner"),
+	ImagePassword = Instance.new("ImageLabel"),
+	TextBoxPassword3 = Instance.new("TextBox"),
+	UIGradient17147_2 = Instance.new("UIGradient"),
+	KeyLogin = Instance.new("Frame"),
+	UICorner78797 = Instance.new("UICorner"),
+	TextBoxLogin1 = Instance.new("TextBox"),
+	ImageUsername = Instance.new("ImageLabel"),
+	UIGradient787787 = Instance.new("UIGradient"),
+	Icons23 = Instance.new("Folder"),
+	Logo = Instance.new("ImageLabel"),
+	UICorner_2414241 = Instance.new("UICorner"),
+	IconRememberSwitch = Instance.new("ImageButton"),
+	UICorner_3412414 = Instance.new("UICorner"),
+	Texts_4 = Instance.new("Folder"),
+	TextAbout56 = Instance.new("TextLabel"),
+	TextRemember = Instance.new("TextButton"),
+	TextRememberSwitch = Instance.new("TextButton"),
+	TextForgot = Instance.new("TextLabel"),
+	TextForgot2 = Instance.new("TextButton"),
+	KeySystemLogin = Instance.new("Frame"),
+	UICorner41412 = Instance.new("UICorner"),
+	TextBoxLogin2 = Instance.new("TextBox"),
+	ImageKeySystem = Instance.new("ImageLabel"),
+	UIGradient41414 = Instance.new("UIGradient"),
 }
 
 --Properties:
@@ -1042,20 +1195,60 @@ AsuraX.UIStrokeCustomImage34.Parent = AsuraX.Button4Preview
 
 AsuraX.UIStrokeCustom35.Color = Color3.fromRGB(97, 97, 97)
 AsuraX.UIStrokeCustom35.Thickness = 1 
-AsuraX.UIStrokeCustom35.Parent = AsuraX.KeyLogin
+AsuraX.UIStrokeCustom35.Parent = AsuraX.KeyLogin2
 
 AsuraX.UIStrokeCustomImage35.Color = Color3.fromRGB(97, 97, 97)
 AsuraX.UIStrokeCustomImage35.Thickness = 1 
-AsuraX.UIStrokeCustomImage35.Parent = AsuraX.PasswordLogin
+AsuraX.UIStrokeCustomImage35.Parent = AsuraX.PasswordLogin2
 
 AsuraX.UIStrokeCustom36.Color = Color3.fromRGB(97, 97, 97)
 AsuraX.UIStrokeCustom36.Thickness = 1 
-AsuraX.UIStrokeCustom36.Parent = AsuraX.LoginFrame
+AsuraX.UIStrokeCustom36.Parent = AsuraX.LoginFrame2
 
 AsuraX.UIStrokeCustomImage36.Color = Color3.fromRGB(54, 46, 71)
 AsuraX.UIStrokeCustomImage36.Thickness = 1 
 AsuraX.UIStrokeCustomImage36.Transparency = 1
 AsuraX.UIStrokeCustomImage36.Parent = AsuraX.LoadingBackground
+
+AsuraX.UIStrokeCustom37.Color = Color3.fromRGB(173, 172, 222)
+AsuraX.UIStrokeCustom37.Thickness = 1 
+AsuraX.UIStrokeCustom37.Parent = AsuraX.BackgroundMain
+
+AsuraX.UIStrokeCustom38.Color = Color3.fromRGB(173, 172, 222)
+AsuraX.UIStrokeCustom38.Thickness = 1 
+AsuraX.UIStrokeCustom38.Parent = AsuraX.BackgroundMain
+
+AsuraX.UIStrokeCustomImage38.Color = Color3.fromRGB(237, 211, 255)
+AsuraX.UIStrokeCustomImage38.Thickness = 1 
+AsuraX.UIStrokeCustomImage38.Transparency = 1
+AsuraX.UIStrokeCustomImage38.Parent = AsuraX.AsuraXFrame
+
+AsuraX.UIStrokeCustom39.Color = Color3.fromRGB(58, 58, 58)
+AsuraX.UIStrokeCustom39.Thickness = 1 
+AsuraX.UIStrokeCustom39.Parent = AsuraX.KeyLogin
+
+AsuraX.UIStrokeCustomImage39.Color = Color3.fromRGB(237, 211, 255)
+AsuraX.UIStrokeCustomImage39.Thickness = 1 
+AsuraX.UIStrokeCustomImage39.Transparency = 1
+AsuraX.UIStrokeCustomImage39.Parent = AsuraX.AsuraXFrame2
+
+AsuraX.UIStrokeCustom40.Color = Color3.fromRGB(58, 58, 58)
+AsuraX.UIStrokeCustom40.Thickness = 1
+AsuraX.UIStrokeCustom40.Transparency = 1
+AsuraX.UIStrokeCustom40.Parent = AsuraX.KeySystemLogin
+
+AsuraX.UIStrokeCustomImage40.Color = Color3.fromRGB(237, 211, 255)
+AsuraX.UIStrokeCustomImage40.Thickness = 1 
+AsuraX.UIStrokeCustomImage40.Transparency = 0
+AsuraX.UIStrokeCustomImage40.Parent = AsuraX.AsuraXFrame3
+
+AsuraX.UIStrokeCustom41.Color = Color3.fromRGB(58, 58, 58)
+AsuraX.UIStrokeCustom41.Thickness = 1 
+AsuraX.UIStrokeCustom41.Parent = AsuraX.LoginFrame
+
+AsuraX.UIStrokeCustomImage41.Color = Color3.fromRGB(58, 58, 58)
+AsuraX.UIStrokeCustomImage41.Thickness = 1 
+AsuraX.UIStrokeCustomImage41.Parent = AsuraX.PasswordLogin
 
 AsuraX.UIGradientCustom1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(221, 134, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(70, 70, 70))}
 AsuraX.UIGradientCustom1.Parent = AsuraX.Button1
@@ -1075,16 +1268,16 @@ AsuraX.UIGradientCustom6.Parent = AsuraX.HideButton
 AsuraX.UIGradient6545.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(67, 63, 106)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(38, 38, 38))}
 AsuraX.UIGradient6545.Rotation = 81
 --AsuraX.UIGradient6545.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.54, 1.00), NumberSequenceKeypoint.new(1.00, 0.00)}
-AsuraX.UIGradient6545.Parent = AsuraX.KeyLogin
+AsuraX.UIGradient6545.Parent = AsuraX.KeyLogin2
 
 AsuraX.UIGradient6745.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(67, 63, 106)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(38, 38, 38))}
 AsuraX.UIGradient6745.Rotation = -81
 --AsuraX.UIGradient6745.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.54, 1.00), NumberSequenceKeypoint.new(1.00, 0.00)}
-AsuraX.UIGradient6745.Parent = AsuraX.PasswordLogin
+AsuraX.UIGradient6745.Parent = AsuraX.PasswordLogin2
 
 AsuraX.UIGradient6945.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(38, 38, 38)), ColorSequenceKeypoint.new(0.48, Color3.fromRGB(75, 67, 121)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(38, 38, 38))}
 AsuraX.UIGradient6945.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.54, 1.00), NumberSequenceKeypoint.new(1.00, 0.00)}
-AsuraX.UIGradient6945.Parent = AsuraX.LoginFrame
+AsuraX.UIGradient6945.Parent = AsuraX.LoginFrame2
 --xd
 
 AsuraX.UICorner.CornerRadius = UDim.new(0, 6)
@@ -1187,6 +1380,7 @@ AsuraX.UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Co
 AsuraX.UIGradient_4.Rotation = 180
 AsuraX.UIGradient_4.Parent = AsuraX.Button2Background
 AsuraX.LoginGui.Draggable=true
+AsuraX.LoginGui.Visible=false
 
 AsuraX.Button2.Name = "Button2"
 AsuraX.Button2.Parent = AsuraX.Button2Background
@@ -1891,7 +2085,7 @@ AsuraX.ScrollingFrame_2.BorderSizePixel = 0
 AsuraX.ScrollingFrame_2.ClipsDescendants = false
 AsuraX.ScrollingFrame_2.Position = UDim2.new(0.0110000046, 0, 0.0199996177, 0)
 AsuraX.ScrollingFrame_2.Size = UDim2.new(0, 534, 0, 231)
-AsuraX.ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 2, 150)
+AsuraX.ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 3, 30)
 AsuraX.ScrollingFrame_2.ScrollBarThickness = 3
 
 AsuraX.GameFrame.Name = "GameFrame"
@@ -3239,6 +3433,41 @@ AsuraX.TextKeyStatus1.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextKeyStatus1.TextSize = 11.000
 AsuraX.TextKeyStatus1.TextXAlignment = Enum.TextXAlignment.Left
 
+AsuraX.ButtonPress1.Name = "ButtonPress1"
+AsuraX.ButtonPress1.Parent = AsuraX.AsuraXFrame
+AsuraX.ButtonPress1.BackgroundTransparency = 1.000
+AsuraX.ButtonPress1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ButtonPress1.BorderSizePixel = 0
+AsuraX.ButtonPress1.Position = UDim2.new(0, 0,0, 0)
+AsuraX.ButtonPress1.Size = UDim2.new(0, 345, 0, 100)
+AsuraX.ButtonPress1.TextTransparency = 1
+
+AsuraX.TextIncorrect.Name="TextIncorrect"
+AsuraX.TextIncorrect.Parent = AsuraX.Texts_4
+AsuraX.TextIncorrect.BackgroundTransparency = 1.000
+AsuraX.TextIncorrect.TextTransparency = 1.000
+AsuraX.TextIncorrect.TextColor3 = Color3.fromRGB(204, 74, 77)
+AsuraX.TextIncorrect.Position = UDim2.new(0.672, 0,0.714, 0)
+AsuraX.TextIncorrect.Size = UDim2.new(0, 136,0, 36)
+
+AsuraX.ButtonPress2.Name = "ButtonPress2"
+AsuraX.ButtonPress2.Parent = AsuraX.AsuraXFrame2
+AsuraX.ButtonPress2.BackgroundTransparency = 1.000
+AsuraX.ButtonPress2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ButtonPress2.BorderSizePixel = 0
+AsuraX.ButtonPress2.Position = UDim2.new(0, 0,0, 0)
+AsuraX.ButtonPress2.Size = UDim2.new(0, 345, 0, 100)
+AsuraX.ButtonPress2.TextTransparency = 1
+
+AsuraX.ButtonPress3.Name = "ButtonPress3"
+AsuraX.ButtonPress3.Parent = AsuraX.AsuraXFrame3
+AsuraX.ButtonPress3.BackgroundTransparency = 1.000
+AsuraX.ButtonPress3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ButtonPress3.BorderSizePixel = 0
+AsuraX.ButtonPress3.Position = UDim2.new(0, 0,0, 0)
+AsuraX.ButtonPress3.Size = UDim2.new(0, 345, 0, 100)
+AsuraX.ButtonPress3.TextTransparency = 1
+
 AsuraX.UICorner9881.CornerRadius = UDim.new(0, 5)
 AsuraX.UICorner9881.Name = "UICorner9881"
 AsuraX.UICorner9881.Parent = AsuraX.Button1Panel
@@ -3317,8 +3546,8 @@ AsuraX.UIGradient9875.Parent = AsuraX.Button2Panel
 
 AsuraX.Image3245.Name = "Image3245"
 AsuraX.Image3245.Parent = AsuraX.Button2Panel
-AsuraX.Image3245.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.Image3245.BackgroundTransparency = 1.000
+AsuraX.Image3245.BackgroundColor3 = Color3.fromRGB(83, 0, 1)
+AsuraX.Image3245.BackgroundTransparency = 0
 AsuraX.Image3245.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AsuraX.Image3245.BorderSizePixel = 0
 AsuraX.Image3245.Position = UDim2.new(0.052906055, 0, 0.087166205, 0)
@@ -3329,6 +3558,10 @@ AsuraX.UIGradient6145.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, 
 AsuraX.UIGradient6145.Rotation = 70
 AsuraX.UIGradient6145.Name = "UIGradient6145"
 AsuraX.UIGradient6145.Parent = AsuraX.Image3245
+
+AsuraX.UICorner98851.CornerRadius = UDim.new(0, 999)
+AsuraX.UICorner98851.Name = "UICorner98851"
+AsuraX.UICorner98851.Parent = AsuraX.Image3245
 
 AsuraX.Text2Alt2.Name = "Text2Alt2"
 AsuraX.Text2Alt2.Parent = AsuraX.Button2Panel
@@ -4390,19 +4623,19 @@ AsuraX.UICornerPreview5.Parent = AsuraX.FramePreview2
 AsuraX.KeySystem.Name = "KeySystem"
 AsuraX.KeySystem.Parent = AsuraX.LoginGui
 
-AsuraX.PasswordLogin.Name = "PasswordLogin"
-AsuraX.PasswordLogin.Parent = AsuraX.KeySystem
-AsuraX.PasswordLogin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.PasswordLogin.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AsuraX.PasswordLogin.BorderSizePixel = 0
-AsuraX.PasswordLogin.Position = UDim2.new(0.115862072, 0, 0.527968645, 0)
-AsuraX.PasswordLogin.Size = UDim2.new(0, 185, 0, 28)
+AsuraX.PasswordLogin2.Name = "PasswordLogin"
+AsuraX.PasswordLogin2.Parent = AsuraX.KeySystem
+AsuraX.PasswordLogin2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.PasswordLogin2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.PasswordLogin2.BorderSizePixel = 0
+AsuraX.PasswordLogin2.Position = UDim2.new(0.115862072, 0, 0.527968645, 0)
+AsuraX.PasswordLogin2.Size = UDim2.new(0, 185, 0, 28)
 
 AsuraX.UICorner_2431.CornerRadius = UDim.new(0, 12)
-AsuraX.UICorner_2431.Parent = AsuraX.PasswordLogin
+AsuraX.UICorner_2431.Parent = AsuraX.PasswordLogin2
 
 AsuraX.TextBoxPassword.Name = ".TextBoxPassword"
-AsuraX.TextBoxPassword.Parent = AsuraX.PasswordLogin
+AsuraX.TextBoxPassword.Parent = AsuraX.PasswordLogin2
 AsuraX.TextBoxPassword.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextBoxPassword.BackgroundTransparency = 1.000
 AsuraX.TextBoxPassword.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -4419,30 +4652,180 @@ AsuraX.TextBoxPassword.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextBoxPassword.TextSize = 14.000
 AsuraX.TextBoxPassword.TextXAlignment = Enum.TextXAlignment.Left
 
-AsuraX.ImagePassword.Name = "ImagePassword"
-AsuraX.ImagePassword.Parent = AsuraX.PasswordLogin
-AsuraX.ImagePassword.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.ImagePassword.BackgroundTransparency = 1.000
-AsuraX.ImagePassword.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AsuraX.ImagePassword.BorderSizePixel = 0
-AsuraX.ImagePassword.Position = UDim2.new(0.875675678, 0, 0.25, 0)
-AsuraX.ImagePassword.Size = UDim2.new(0, 15, 0, 13)
-AsuraX.ImagePassword.Image = "http://www.roblox.com/asset/?id=17569248270"
-AsuraX.ImagePassword.ImageTransparency = 0.300
+AsuraX.GameFrame15.Name = "GameFrame15"
+AsuraX.GameFrame15.Parent = AsuraX.ScrollingFrame_2
+AsuraX.GameFrame15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.GameFrame15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.GameFrame15.BorderSizePixel = 0
+AsuraX.GameFrame15.Position = UDim2.new(0.640999973, 0, 0.173999995, 0)
+AsuraX.GameFrame15.Size = UDim2.new(0, 153, 0, 135)
 
-AsuraX.KeyLogin.Name = "KeyLogin"
-AsuraX.KeyLogin.Parent = AsuraX.KeySystem
-AsuraX.KeyLogin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.KeyLogin.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AsuraX.KeyLogin.BorderSizePixel = 0
-AsuraX.KeyLogin.Position = UDim2.new(0.115862072, 0, 0.413613439, 0)
-AsuraX.KeyLogin.Size = UDim2.new(0, 185, 0, 28)
+AsuraX.UICorner14171.Name = "UICorner14171"
+AsuraX.UICorner14171.Parent = AsuraX.GameFrame15
+
+AsuraX.UIGradient7175.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(22, 22, 22)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(26, 26, 26))}
+AsuraX.UIGradient7175.Rotation = -90
+AsuraX.UIGradient7175.Name = "UIGradient7175"
+AsuraX.UIGradient7175.Parent = AsuraX.GameFrame15
+
+AsuraX.RanButton166.Name = "RanButton166"
+AsuraX.RanButton166.Parent = AsuraX.GameFrame15
+AsuraX.RanButton166.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.RanButton166.BackgroundTransparency = 1.000
+AsuraX.RanButton166.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.RanButton166.BorderSizePixel = 0
+AsuraX.RanButton166.Position = UDim2.new(0.763491988, 0, 0.740734637, 0)
+AsuraX.RanButton166.Size = UDim2.new(0, 29, 0, 28)
+AsuraX.RanButton166.Image = "rbxassetid://7360647679"
+AsuraX.RanButton166.ImageColor3 = Color3.fromRGB(105, 93, 198)
+AsuraX.RanButton166.ImageTransparency = 0.200
+
+AsuraX.InfoButton177.Name = "InfoButton177"
+AsuraX.InfoButton177.Parent = AsuraX.GameFrame15
+AsuraX.InfoButton177.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.InfoButton177.BackgroundTransparency = 1.000
+AsuraX.InfoButton177.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.InfoButton177.BorderSizePixel = 0
+AsuraX.InfoButton177.Position = UDim2.new(0.0439999998, 0, 0.785000026, 0)
+AsuraX.InfoButton177.Size = UDim2.new(0, 21, 0, 20)
+AsuraX.InfoButton177.Image = "http://www.roblox.com/asset/?id=17476885966"
+AsuraX.InfoButton177.ImageColor3 = Color3.fromRGB(105, 93, 198)
+AsuraX.InfoButton177.ImageTransparency = 0.200
+
+AsuraX.ImageLabel175.Name = "ImageLabel175"
+AsuraX.ImageLabel175.Parent = AsuraX.GameFrame15
+AsuraX.ImageLabel175.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImageLabel175.BackgroundTransparency = 1.000
+AsuraX.ImageLabel175.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImageLabel175.BorderSizePixel = 0
+AsuraX.ImageLabel175.Size = UDim2.new(0, 165, 0, 92)
+AsuraX.ImageLabel175.Image = "http://www.roblox.com/asset/?id=17610244200"
+
+AsuraX.UICorner7878.Name = "UICorner7878"
+AsuraX.UICorner7878.Parent = AsuraX.ImageLabel175
+
+AsuraX.GameFrame16.Name = "GameFrame16"
+AsuraX.GameFrame16.Parent = AsuraX.ScrollingFrame_2
+AsuraX.GameFrame16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.GameFrame16.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.GameFrame16.BorderSizePixel = 0
+AsuraX.GameFrame16.Position = UDim2.new(0.640999973, 0, 0.173999995, 0)
+AsuraX.GameFrame16.Size = UDim2.new(0, 153, 0, 135)
+
+AsuraX.UICorner31241241.Parent = AsuraX.GameFrame16
+
+AsuraX.UIGradient312412.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(22, 22, 22)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(26, 26, 26))}
+AsuraX.UIGradient312412.Rotation = -90
+AsuraX.UIGradient312412.Parent = AsuraX.GameFrame16
+
+AsuraX.RanButton144.Name = "RanButton144"
+AsuraX.RanButton144.Parent = AsuraX.GameFrame16
+AsuraX.RanButton144.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.RanButton144.BackgroundTransparency = 1.000
+AsuraX.RanButton144.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.RanButton144.BorderSizePixel = 0
+AsuraX.RanButton144.Position = UDim2.new(0.763491988, 0, 0.740734637, 0)
+AsuraX.RanButton144.Size = UDim2.new(0, 29, 0, 28)
+AsuraX.RanButton144.Image = "rbxassetid://7360647679"
+AsuraX.RanButton144.ImageColor3 = Color3.fromRGB(105, 93, 198)
+AsuraX.RanButton144.ImageTransparency = 0.200
+
+AsuraX.InfoButton155.Name = "InfoButton155"
+AsuraX.InfoButton155.Parent = AsuraX.GameFrame16
+AsuraX.InfoButton155.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.InfoButton155.BackgroundTransparency = 1.000
+AsuraX.InfoButton155.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.InfoButton155.BorderSizePixel = 0
+AsuraX.InfoButton155.Position = UDim2.new(0.0439999998, 0, 0.785000026, 0)
+AsuraX.InfoButton155.Size = UDim2.new(0, 21, 0, 20)
+AsuraX.InfoButton155.Image = "http://www.roblox.com/asset/?id=17476885966"
+AsuraX.InfoButton155.ImageColor3 = Color3.fromRGB(105, 93, 198)
+AsuraX.InfoButton155.ImageTransparency = 0.200
+
+AsuraX.ImageLabel174.Name = "ImageLabel174"
+AsuraX.ImageLabel174.Parent = AsuraX.GameFrame16
+AsuraX.ImageLabel174.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImageLabel174.BackgroundTransparency = 1.000
+AsuraX.ImageLabel174.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImageLabel174.BorderSizePixel = 0
+AsuraX.ImageLabel174.Size = UDim2.new(0, 165, 0, 92)
+AsuraX.ImageLabel174.Image = "http://www.roblox.com/asset/?id=17610262015"
+
+AsuraX.UICorner8789.Name = "UICorner8789"
+AsuraX.UICorner8789.Parent = AsuraX.ImageLabel174
+
+AsuraX.GameFrame17.Name = "GameFrame17"
+AsuraX.GameFrame17.Parent = AsuraX.ScrollingFrame_2
+AsuraX.GameFrame17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.GameFrame17.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.GameFrame17.BorderSizePixel = 0
+AsuraX.GameFrame17.Position = UDim2.new(0.640999973, 0, 0.173999995, 0)
+AsuraX.GameFrame17.Size = UDim2.new(0, 153, 0, 135)
+
+AsuraX.UICorner_2412312.Parent = AsuraX.GameFrame17
+
+AsuraX.UIGradient_23123.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(22, 22, 22)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(26, 26, 26))}
+AsuraX.UIGradient_23123.Rotation = -90
+AsuraX.UIGradient_23123.Parent = AsuraX.GameFrame17
+
+AsuraX.RanButton31241.Name = "RanButton"
+AsuraX.RanButton31241.Parent = AsuraX.GameFrame17
+AsuraX.RanButton31241.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.RanButton31241.BackgroundTransparency = 1.000
+AsuraX.RanButton31241.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.RanButton31241.BorderSizePixel = 0
+AsuraX.RanButton31241.Position = UDim2.new(0.763491988, 0, 0.740734637, 0)
+AsuraX.RanButton31241.Size = UDim2.new(0, 29, 0, 28)
+AsuraX.RanButton31241.Image = "rbxassetid://7360647679"
+AsuraX.RanButton31241.ImageColor3 = Color3.fromRGB(105, 93, 198)
+AsuraX.RanButton31241.ImageTransparency = 0.200
+
+AsuraX.InfoButton314141.Name = "InfoButton"
+AsuraX.InfoButton314141.Parent = AsuraX.GameFrame17
+AsuraX.InfoButton314141.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.InfoButton314141.BackgroundTransparency = 1.000
+AsuraX.InfoButton314141.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.InfoButton314141.BorderSizePixel = 0
+AsuraX.InfoButton314141.Position = UDim2.new(0.0439999998, 0, 0.785000026, 0)
+AsuraX.InfoButton314141.Size = UDim2.new(0, 21, 0, 20)
+AsuraX.InfoButton314141.Image = "http://www.roblox.com/asset/?id=17476885966"
+AsuraX.InfoButton314141.ImageColor3 = Color3.fromRGB(105, 93, 198)
+AsuraX.InfoButton314141.ImageTransparency = 0.200
+
+AsuraX.ImageLabel4314.Parent = AsuraX.GameFrame17
+AsuraX.ImageLabel4314.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImageLabel4314.BackgroundTransparency = 1.000
+AsuraX.ImageLabel4314.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImageLabel4314.BorderSizePixel = 0
+AsuraX.ImageLabel4314.Size = UDim2.new(0, 165, 0, 92)
+AsuraX.ImageLabel4314.Image = "http://www.roblox.com/asset/?id=17610311022"
+
+AsuraX.UICorner_33123.Parent = AsuraX.ImageLabel4314
+
+AsuraX.ImagePassword2.Name = "ImagePassword"
+AsuraX.ImagePassword2.Parent = AsuraX.PasswordLogin2
+AsuraX.ImagePassword2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImagePassword2.BackgroundTransparency = 1.000
+AsuraX.ImagePassword2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImagePassword2.BorderSizePixel = 0
+AsuraX.ImagePassword2.Position = UDim2.new(0.875675678, 0, 0.25, 0)
+AsuraX.ImagePassword2.Size = UDim2.new(0, 15, 0, 13)
+AsuraX.ImagePassword2.Image = "http://www.roblox.com/asset/?id=17569248270"
+AsuraX.ImagePassword2.ImageTransparency = 0.300
+
+AsuraX.KeyLogin2.Name = "KeyLogin"
+AsuraX.KeyLogin2.Parent = AsuraX.KeySystem
+AsuraX.KeyLogin2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.KeyLogin2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.KeyLogin2.BorderSizePixel = 0
+AsuraX.KeyLogin2.Position = UDim2.new(0.115862072, 0, 0.413613439, 0)
+AsuraX.KeyLogin2.Size = UDim2.new(0, 185, 0, 28)
 
 AsuraX.UICorner_3421.CornerRadius = UDim.new(0, 12)
-AsuraX.UICorner_3421.Parent = AsuraX.KeyLogin
+AsuraX.UICorner_3421.Parent = AsuraX.KeyLogin2
 
 AsuraX.TextBoxLogin.Name = ".TextBoxLogin"
-AsuraX.TextBoxLogin.Parent = AsuraX.KeyLogin
+AsuraX.TextBoxLogin.Parent = AsuraX.KeyLogin2
 AsuraX.TextBoxLogin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextBoxLogin.BackgroundTransparency = 1.000
 AsuraX.TextBoxLogin.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -4459,16 +4842,16 @@ AsuraX.TextBoxLogin.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.TextBoxLogin.TextSize = 14.000
 AsuraX.TextBoxLogin.TextXAlignment = Enum.TextXAlignment.Left
 
-AsuraX.ImageUsername.Name = "ImageUsername"
-AsuraX.ImageUsername.Parent = AsuraX.KeyLogin
-AsuraX.ImageUsername.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.ImageUsername.BackgroundTransparency = 1.000
-AsuraX.ImageUsername.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AsuraX.ImageUsername.BorderSizePixel = 0
-AsuraX.ImageUsername.Position = UDim2.new(0.875675678, 0, 0.25, 0)
-AsuraX.ImageUsername.Size = UDim2.new(0, 15, 0, 13)
-AsuraX.ImageUsername.Image = "http://www.roblox.com/asset/?id=17569229862"
-AsuraX.ImageUsername.ImageTransparency = 0.300
+AsuraX.ImageUsername2.Name = "ImageUsername"
+AsuraX.ImageUsername2.Parent = AsuraX.KeyLogin2
+AsuraX.ImageUsername2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImageUsername2.BackgroundTransparency = 1.000
+AsuraX.ImageUsername2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImageUsername2.BorderSizePixel = 0
+AsuraX.ImageUsername2.Position = UDim2.new(0.875675678, 0, 0.25, 0)
+AsuraX.ImageUsername2.Size = UDim2.new(0, 15, 0, 13)
+AsuraX.ImageUsername2.Image = "http://www.roblox.com/asset/?id=17569229862"
+AsuraX.ImageUsername2.ImageTransparency = 0.300
 
 AsuraX.LoadingBar.Name = "LoadingBar"
 AsuraX.LoadingBar.Parent = AsuraX.LoginGui
@@ -4497,28 +4880,28 @@ AsuraX.UICorner7897.CornerRadius = UDim.new(0, 100)
 AsuraX.UICorner7897.Name = "UICorner7897"
 AsuraX.UICorner7897.Parent = AsuraX.LoadBar
 
-AsuraX.LoginFrame.Name = "LoginFrame"
-AsuraX.LoginFrame.Parent = AsuraX.KeySystem
-AsuraX.LoginFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.LoginFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AsuraX.LoginFrame.BorderSizePixel = 0
-AsuraX.LoginFrame.Position = UDim2.new(0.115862072, 0, 0.635024607, 0)
-AsuraX.LoginFrame.Size = UDim2.new(0, 185, 0, 28)
+AsuraX.LoginFrame2.Name = "LoginFrame"
+AsuraX.LoginFrame2.Parent = AsuraX.KeySystem
+AsuraX.LoginFrame2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.LoginFrame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.LoginFrame2.BorderSizePixel = 0
+AsuraX.LoginFrame2.Position = UDim2.new(0.115862072, 0, 0.635024607, 0)
+AsuraX.LoginFrame2.Size = UDim2.new(0, 185, 0, 28)
 
 AsuraX.UICorner_4413.CornerRadius = UDim.new(0, 12)
-AsuraX.UICorner_4413.Parent = AsuraX.LoginFrame
+AsuraX.UICorner_4413.Parent = AsuraX.LoginFrame2
 
-AsuraX.TextLaunch.Name = "TextLaunch"
-AsuraX.TextLaunch.Parent = AsuraX.LoginFrame
-AsuraX.TextLaunch.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.TextLaunch.BackgroundTransparency = 1.000
-AsuraX.TextLaunch.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AsuraX.TextLaunch.BorderSizePixel = 0
-AsuraX.TextLaunch.Size = UDim2.new(0, 185, 0, 28)
-AsuraX.TextLaunch.Font = Enum.Font.Fantasy
-AsuraX.TextLaunch.Text = "LAUNCH"
-AsuraX.TextLaunch.TextColor3 = Color3.fromRGB(255, 255, 255)
-AsuraX.TextLaunch.TextSize = 14.000
+AsuraX.TextLaunch2.Name = "TextLaunch"
+AsuraX.TextLaunch2.Parent = AsuraX.LoginFrame2
+AsuraX.TextLaunch2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextLaunch2.BackgroundTransparency = 1.000
+AsuraX.TextLaunch2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextLaunch2.BorderSizePixel = 0
+AsuraX.TextLaunch2.Size = UDim2.new(0, 185, 0, 28)
+AsuraX.TextLaunch2.Font = Enum.Font.Fantasy
+AsuraX.TextLaunch2.Text = "LAUNCH"
+AsuraX.TextLaunch2.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextLaunch2.TextSize = 14.000
 
 AsuraX.Interface.Name = "Interface"
 AsuraX.Interface.Parent = AsuraX.LoginGui
@@ -4674,7 +5057,7 @@ AsuraX.SubText6.BorderSizePixel = 0
 AsuraX.SubText6.Position = UDim2.new(-0.0032409667, 0, 0.906010926, 0)
 AsuraX.SubText6.Size = UDim2.new(0, 112, 0, 28)
 AsuraX.SubText6.Font = Enum.Font.Gotham
-AsuraX.SubText6.Text = "0 days ago"
+AsuraX.SubText6.Text = "1 day ago"
 AsuraX.SubText6.TextColor3 = Color3.fromRGB(255, 255, 255)
 AsuraX.SubText6.TextSize = 13.000
 AsuraX.SubText6.TextTransparency = 1
@@ -4766,6 +5149,583 @@ AsuraX.AboutText3.TextSize = 12.000
 AsuraX.AboutText3.TextTransparency = 1
 AsuraX.AboutText3.TextTransparency = 1
 AsuraX.AboutText3.TextWrapped = true
+
+AsuraX.BackgroundMain.Name = "BackgroundMain"
+AsuraX.BackgroundMain.Parent = AsuraX.ScreenGui
+AsuraX.BackgroundMain.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.BackgroundMain.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.BackgroundMain.BorderSizePixel = 0
+AsuraX.BackgroundMain.Position = UDim2.new(0.086666666, 0, 0.153559133, 0)
+AsuraX.BackgroundMain.Size = UDim2.new(0, 666, 0, 482)
+
+AsuraX.UICorner17474.CornerRadius = UDim.new(0, 4)
+AsuraX.UICorner17474.Name = "UICorner17474"
+AsuraX.UICorner17474.Parent = AsuraX.BackgroundMain
+
+AsuraX.BackgroundImage.Name = "BackgroundImage"
+AsuraX.BackgroundImage.Parent = AsuraX.BackgroundMain
+AsuraX.BackgroundImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.BackgroundImage.BackgroundTransparency = 1.000
+AsuraX.BackgroundImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.BackgroundImage.BorderSizePixel = 0
+AsuraX.BackgroundImage.ClipsDescendants = true
+AsuraX.BackgroundImage.Size = UDim2.new(0, 666, 0, 482)
+AsuraX.BackgroundImage.Image = "http://www.roblox.com/asset/?id=17699918655"
+
+AsuraX.UICorner98987.CornerRadius = UDim.new(0, 4)
+AsuraX.UICorner98987.Name = "UICorner98987"
+AsuraX.UICorner98987.Parent = AsuraX.BackgroundImage
+
+AsuraX.SelectPanel.Name = "SelectPanel"
+AsuraX.SelectPanel.Parent = AsuraX.BackgroundImage
+
+AsuraX.SidePanel.Name = "SidePanel"
+AsuraX.SidePanel.Parent = AsuraX.SelectPanel
+AsuraX.SidePanel.Active = true
+AsuraX.SidePanel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.SidePanel.BackgroundTransparency = 1.000
+AsuraX.SidePanel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.SidePanel.BorderSizePixel = 0
+AsuraX.SidePanel.ClipsDescendants = false
+AsuraX.SidePanel.Position = UDim2.new(0.0121130552, 0, 0.0145228216, 0)
+AsuraX.SidePanel.Size = UDim2.new(0, 353, 0, 475)
+AsuraX.SidePanel.ScrollBarThickness = 2
+
+AsuraX.AsuraXFrame.Name = "AsuraXFrame"
+AsuraX.AsuraXFrame.Parent = AsuraX.SidePanel
+AsuraX.AsuraXFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.AsuraXFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.AsuraXFrame.BorderSizePixel = 0
+AsuraX.AsuraXFrame.Position = UDim2.new(0.00283286115, 0, 0.00707146898, 0)
+AsuraX.AsuraXFrame.Size = UDim2.new(0, 345, 0, 100)
+
+AsuraX.UICorner689987.Name = "UICorner689987"
+AsuraX.UICorner689987.Parent = AsuraX.AsuraXFrame
+
+AsuraX.UIGradient28282.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(20, 20, 20)), ColorSequenceKeypoint.new(0.48, Color3.fromRGB(24, 26, 42)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(10, 10, 10))}
+AsuraX.UIGradient28282.Name = "UIGradient28282"
+AsuraX.UIGradient28282.Parent = AsuraX.AsuraXFrame
+
+AsuraX.Images141421.Name = "Images"
+AsuraX.Images141421.Parent = AsuraX.AsuraXFrame
+
+AsuraX.StatusIcon.Name = "StatusIcon"
+AsuraX.StatusIcon.Parent = AsuraX.Images141421
+AsuraX.StatusIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.StatusIcon.BackgroundTransparency = 1.000
+AsuraX.StatusIcon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.StatusIcon.BorderSizePixel = 0
+AsuraX.StatusIcon.Position = UDim2.new(0.924000025, 0, 0.100000001, 0)
+AsuraX.StatusIcon.Size = UDim2.new(0, 17, 0, 17)
+AsuraX.StatusIcon.Image = "http://www.roblox.com/asset/?id=17700160790"
+AsuraX.StatusIcon.ImageColor3 = Color3.fromRGB(255, 125, 127)
+
+AsuraX.IconStatus.Name = "IconStatus"
+AsuraX.IconStatus.Parent = AsuraX.Images141421
+AsuraX.IconStatus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.IconStatus.BackgroundTransparency = 1.000
+AsuraX.IconStatus.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.IconStatus.BorderSizePixel = 0
+AsuraX.IconStatus.Position = UDim2.new(0.717101455, 0, 0.203999788, 0)
+AsuraX.IconStatus.Size = UDim2.new(0, 61, 0, 58)
+AsuraX.IconStatus.Image = "rbxassetid://5689122363"
+AsuraX.IconStatus.ImageColor3 = Color3.fromRGB(223, 187, 255)
+
+AsuraX.Texts231231.Name = "Texts"
+AsuraX.Texts231231.Parent = AsuraX.AsuraXFrame
+
+AsuraX.TextMain1.Name = "TextMain1"
+AsuraX.TextMain1.Parent = AsuraX.Texts231231
+AsuraX.TextMain1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextMain1.BackgroundTransparency = 1.000
+AsuraX.TextMain1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextMain1.BorderSizePixel = 0
+AsuraX.TextMain1.Position = UDim2.new(0.0753623173, 0, 0.140000001, 0)
+AsuraX.TextMain1.Size = UDim2.new(0, 93, 0, 36)
+AsuraX.TextMain1.Font = Enum.Font.Arial
+AsuraX.TextMain1.Text = "AsuraX - Free"
+AsuraX.TextMain1.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextMain1.TextSize = 14.000
+
+AsuraX.TextMain2.Name = "TextMain2"
+AsuraX.TextMain2.Parent = AsuraX.Texts231231
+AsuraX.TextMain2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextMain2.BackgroundTransparency = 1.000
+AsuraX.TextMain2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextMain2.BorderSizePixel = 0
+AsuraX.TextMain2.Position = UDim2.new(0.301449269, 0, 0.140000001, 0)
+AsuraX.TextMain2.Size = UDim2.new(0, 93, 0, 36)
+AsuraX.TextMain2.Font = Enum.Font.Arial
+AsuraX.TextMain2.Text = "[  V0.01 ]"
+AsuraX.TextMain2.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextMain2.TextSize = 14.000
+AsuraX.TextMain2.TextTransparency = 0.800
+
+AsuraX.TextAbout1.Name = "TextAbout1"
+AsuraX.TextAbout1.Parent = AsuraX.Texts231231
+AsuraX.TextAbout1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextAbout1.BackgroundTransparency = 1.000
+AsuraX.TextAbout1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextAbout1.BorderSizePixel = 0
+AsuraX.TextAbout1.Position = UDim2.new(0.0202898551, 0, 0.5, 0)
+AsuraX.TextAbout1.Size = UDim2.new(0, 234, 0, 36)
+AsuraX.TextAbout1.Font = Enum.Font.Arial
+AsuraX.TextAbout1.Text = "Bypass anything without getting detected "
+AsuraX.TextAbout1.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextAbout1.TextSize = 14.000
+AsuraX.TextAbout1.TextTransparency = 0.800
+
+AsuraX.UIListLayout14.Name = "UIListLayout14"
+AsuraX.UIListLayout14.Parent = AsuraX.SidePanel
+AsuraX.UIListLayout14.SortOrder = Enum.SortOrder.LayoutOrder
+AsuraX.UIListLayout14.Padding = UDim.new(0, 11)
+
+AsuraX.AsuraXFrame2.Name = "AsuraXFrame2"
+AsuraX.AsuraXFrame2.Parent = AsuraX.SidePanel
+AsuraX.AsuraXFrame2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.AsuraXFrame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.AsuraXFrame2.BorderSizePixel = 0
+AsuraX.AsuraXFrame2.Position = UDim2.new(0.00283286115, 0, 0.00707146898, 0)
+AsuraX.AsuraXFrame2.Size = UDim2.new(0, 345, 0, 100)
+
+AsuraX.UICorner35445.Name = "UICorner35445"
+AsuraX.UICorner35445.Parent = AsuraX.AsuraXFrame2
+
+AsuraX.UIGradient147147.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(20, 20, 20)), ColorSequenceKeypoint.new(0.48, Color3.fromRGB(24, 26, 42)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(10, 10, 10))}
+AsuraX.UIGradient147147.Name = "UIGradient147147"
+AsuraX.UIGradient147147.Parent = AsuraX.AsuraXFrame2
+
+AsuraX.Images_2412412.Name = "Images"
+AsuraX.Images_2412412.Parent = AsuraX.AsuraXFrame2
+
+AsuraX.StatusIcon_2.Name = "StatusIcon"
+AsuraX.StatusIcon_2.Parent = AsuraX.Images_2412412
+AsuraX.StatusIcon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.StatusIcon_2.BackgroundTransparency = 1.000
+AsuraX.StatusIcon_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.StatusIcon_2.BorderSizePixel = 0
+AsuraX.StatusIcon_2.Position = UDim2.new(0.924000025, 0, 0.100000001, 0)
+AsuraX.StatusIcon_2.Size = UDim2.new(0, 17, 0, 17)
+AsuraX.StatusIcon_2.Image = "rbxassetid://17700160790"
+AsuraX.StatusIcon_2.ImageColor3 = Color3.fromRGB(255, 125, 127)
+
+AsuraX.IconStatus_2.Name = "IconStatus"
+AsuraX.IconStatus_2.Parent = AsuraX.Images_2412412
+AsuraX.IconStatus_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.IconStatus_2.BackgroundTransparency = 1.000
+AsuraX.IconStatus_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.IconStatus_2.BorderSizePixel = 0
+AsuraX.IconStatus_2.Position = UDim2.new(0.717101455, 0, 0.203999788, 0)
+AsuraX.IconStatus_2.Size = UDim2.new(0, 61, 0, 58)
+AsuraX.IconStatus_2.Image = "rbxassetid://5689122363"
+AsuraX.IconStatus_2.ImageColor3 = Color3.fromRGB(223, 187, 255)
+
+AsuraX.Texts_21231.Name = "Texts"
+AsuraX.Texts_21231.Parent = AsuraX.AsuraXFrame2
+
+AsuraX.TextMain1_2.Name = "TextMain1"
+AsuraX.TextMain1_2.Parent = AsuraX.Texts_21231
+AsuraX.TextMain1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextMain1_2.BackgroundTransparency = 1.000
+AsuraX.TextMain1_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextMain1_2.BorderSizePixel = 0
+AsuraX.TextMain1_2.Position = UDim2.new(0.0753623173, 0, 0.140000001, 0)
+AsuraX.TextMain1_2.Size = UDim2.new(0, 93, 0, 36)
+AsuraX.TextMain1_2.Font = Enum.Font.Arial
+AsuraX.TextMain1_2.Text = "AsuraX - Key system"
+AsuraX.TextMain1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextMain1_2.TextSize = 14.000
+
+AsuraX.TextMain2_2.Name = "TextMain2"
+AsuraX.TextMain2_2.Parent = AsuraX.Texts_21231
+AsuraX.TextMain2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextMain2_2.BackgroundTransparency = 1.000
+AsuraX.TextMain2_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextMain2_2.BorderSizePixel = 0
+AsuraX.TextMain2_2.Position = UDim2.new(0.344927549, 0, 0.140000001, 0)
+AsuraX.TextMain2_2.Size = UDim2.new(0, 93, 0, 36)
+AsuraX.TextMain2_2.Font = Enum.Font.Arial
+AsuraX.TextMain2_2.Text = "[  V0.01 ]"
+AsuraX.TextMain2_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextMain2_2.TextSize = 14.000
+AsuraX.TextMain2_2.TextTransparency = 0.800
+
+AsuraX.TextAbout1_2.Name = "TextAbout1"
+AsuraX.TextAbout1_2.Parent = AsuraX.Texts_21231
+AsuraX.TextAbout1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextAbout1_2.BackgroundTransparency = 1.000
+AsuraX.TextAbout1_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextAbout1_2.BorderSizePixel = 0
+AsuraX.TextAbout1_2.Position = UDim2.new(0.0202898551, 0, 0.5, 0)
+AsuraX.TextAbout1_2.Size = UDim2.new(0, 234, 0, 36)
+AsuraX.TextAbout1_2.Font = Enum.Font.Arial
+AsuraX.TextAbout1_2.Text = "Cheat with good scripts with some extras"
+AsuraX.TextAbout1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextAbout1_2.TextSize = 14.000
+AsuraX.TextAbout1_2.TextTransparency = 0.800
+
+AsuraX.AsuraXFrame3.Name = "AsuraXFrame3"
+AsuraX.AsuraXFrame3.Parent = AsuraX.SidePanel
+AsuraX.AsuraXFrame3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.AsuraXFrame3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.AsuraXFrame3.BorderSizePixel = 0
+AsuraX.AsuraXFrame3.Position = UDim2.new(0.00283286115, 0, 0.00707146898, 0)
+AsuraX.AsuraXFrame3.Size = UDim2.new(0, 345, 0, 100)
+
+AsuraX.UICorner11881.Name = "UICorner11881"
+AsuraX.UICorner11881.Parent = AsuraX.AsuraXFrame3
+
+AsuraX.UIGradient17147.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(20, 20, 20)), ColorSequenceKeypoint.new(0.48, Color3.fromRGB(24, 26, 42)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(10, 10, 10))}
+AsuraX.UIGradient17147.Name = "UIGradient17147"
+AsuraX.UIGradient17147.Parent = AsuraX.AsuraXFrame3
+
+AsuraX.Images_3.Name = "Images"
+AsuraX.Images_3.Parent = AsuraX.AsuraXFrame3
+
+AsuraX.StatusIcon_3.Name = "StatusIcon"
+AsuraX.StatusIcon_3.Parent = AsuraX.Images_3
+AsuraX.StatusIcon_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.StatusIcon_3.BackgroundTransparency = 1.000
+AsuraX.StatusIcon_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.StatusIcon_3.BorderSizePixel = 0
+AsuraX.StatusIcon_3.Position = UDim2.new(0.924000025, 0, 0.100000001, 0)
+AsuraX.StatusIcon_3.Size = UDim2.new(0, 17, 0, 17)
+AsuraX.StatusIcon_3.Image = "http://www.roblox.com/asset/?id=17700063335"
+AsuraX.StatusIcon_3.ImageColor3 = Color3.fromRGB(143, 255, 126)
+
+AsuraX.IconStatus_3.Name = "IconStatus"
+AsuraX.IconStatus_3.Parent = AsuraX.Images_3
+AsuraX.IconStatus_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.IconStatus_3.BackgroundTransparency = 1.000
+AsuraX.IconStatus_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.IconStatus_3.BorderSizePixel = 0
+AsuraX.IconStatus_3.Position = UDim2.new(0.673623264, 0, 0.200000003, 0)
+AsuraX.IconStatus_3.Size = UDim2.new(0, 91, 0, 71)
+AsuraX.IconStatus_3.Image = "http://www.roblox.com/asset/?id=17700233434"
+AsuraX.IconStatus_3.ImageColor3 = Color3.fromRGB(223, 187, 255)
+
+AsuraX.UICorner3141241.CornerRadius = UDim.new(0, 10)
+AsuraX.UICorner3141241.Parent = AsuraX.IconStatus_3
+
+AsuraX.Texts_3.Name = "Texts"
+AsuraX.Texts_3.Parent = AsuraX.AsuraXFrame3
+
+AsuraX.TextMain1_3.Name = "TextMain1"
+AsuraX.TextMain1_3.Parent = AsuraX.Texts_3
+AsuraX.TextMain1_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextMain1_3.BackgroundTransparency = 1.000
+AsuraX.TextMain1_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextMain1_3.BorderSizePixel = 0
+AsuraX.TextMain1_3.Position = UDim2.new(0.0753623173, 0, 0.140000001, 0)
+AsuraX.TextMain1_3.Size = UDim2.new(0, 93, 0, 36)
+AsuraX.TextMain1_3.Font = Enum.Font.Arial
+AsuraX.TextMain1_3.Text = "AsuraX - Paid"
+AsuraX.TextMain1_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextMain1_3.TextSize = 14.000
+
+AsuraX.TextMain2_3.Name = "TextMain2"
+AsuraX.TextMain2_3.Parent = AsuraX.Texts_3
+AsuraX.TextMain2_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextMain2_3.BackgroundTransparency = 1.000
+AsuraX.TextMain2_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextMain2_3.BorderSizePixel = 0
+AsuraX.TextMain2_3.Position = UDim2.new(0.301449269, 0, 0.140000001, 0)
+AsuraX.TextMain2_3.Size = UDim2.new(0, 93, 0, 36)
+AsuraX.TextMain2_3.Font = Enum.Font.Arial
+AsuraX.TextMain2_3.Text = "[  V0.18 ]"
+AsuraX.TextMain2_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextMain2_3.TextSize = 14.000
+AsuraX.TextMain2_3.TextTransparency = 0.800
+
+AsuraX.TextAbout1_3.Name = "TextAbout1"
+AsuraX.TextAbout1_3.Parent = AsuraX.Texts_3
+AsuraX.TextAbout1_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextAbout1_3.BackgroundTransparency = 1.000
+AsuraX.TextAbout1_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextAbout1_3.BorderSizePixel = 0
+AsuraX.TextAbout1_3.Position = UDim2.new(0.0202898551, 0, 0.5, 0)
+AsuraX.TextAbout1_3.Size = UDim2.new(0, 240, 0, 36)
+AsuraX.TextAbout1_3.Font = Enum.Font.Arial
+AsuraX.TextAbout1_3.Text = "Cheat like nothing happened with advanced scripts"
+AsuraX.TextAbout1_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextAbout1_3.TextSize = 14.000
+AsuraX.TextAbout1_3.TextTransparency = 0.800
+AsuraX.TextAbout1_3.TextWrapped = true
+
+AsuraX.LoginPanel.Name = "LoginPanel"
+AsuraX.LoginPanel.Parent = AsuraX.SelectPanel
+
+AsuraX.LoginFrame.Name = "LoginFrame"
+AsuraX.LoginFrame.Parent = AsuraX.LoginPanel
+AsuraX.LoginFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.LoginFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.LoginFrame.BorderSizePixel = 0
+AsuraX.LoginFrame.Position = UDim2.new(0.616055846, 0, 0.59975487, 0)
+AsuraX.LoginFrame.Size = UDim2.new(0, 215, 0, 30)
+
+AsuraX.UICorner1551.CornerRadius = UDim.new(0, 4)
+AsuraX.UICorner1551.Name = "UICorner1551"
+AsuraX.UICorner1551.Parent = AsuraX.LoginFrame
+
+AsuraX.TextLaunch.Name = "TextLaunch"
+AsuraX.TextLaunch.Parent = AsuraX.LoginFrame
+AsuraX.TextLaunch.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextLaunch.BackgroundTransparency = 1.000
+AsuraX.TextLaunch.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextLaunch.BorderSizePixel = 0
+AsuraX.TextLaunch.Size = UDim2.new(0, 215, 0, 28)
+AsuraX.TextLaunch.Font = Enum.Font.Fantasy
+AsuraX.TextLaunch.Text = "LAUNCH"
+AsuraX.TextLaunch.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextLaunch.TextSize = 14.000
+
+AsuraX.UIGradient57574.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(13, 13, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(38, 38, 38))}
+AsuraX.UIGradient57574.Rotation = 180
+AsuraX.UIGradient57574.Name = "UIGradient57574"
+AsuraX.UIGradient57574.Parent = AsuraX.LoginFrame
+
+AsuraX.PasswordLogin.Name = "PasswordLogin"
+AsuraX.PasswordLogin.Parent = AsuraX.LoginPanel
+AsuraX.PasswordLogin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.PasswordLogin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.PasswordLogin.BorderSizePixel = 0
+AsuraX.PasswordLogin.Position = UDim2.new(0.614554346, 0, 0.436682343, 0)
+AsuraX.PasswordLogin.Size = UDim2.new(0, 214, 0, 35)
+
+AsuraX.UICorner14474.CornerRadius = UDim.new(0, 4)
+AsuraX.UICorner14474.Name = "UICorner14474"
+AsuraX.UICorner14474.Parent = AsuraX.PasswordLogin
+
+AsuraX.ImagePassword.Name = "ImagePassword"
+AsuraX.ImagePassword.Parent = AsuraX.PasswordLogin
+AsuraX.ImagePassword.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImagePassword.BackgroundTransparency = 1.000
+AsuraX.ImagePassword.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImagePassword.BorderSizePixel = 0
+AsuraX.ImagePassword.Position = UDim2.new(0.889694333, 0, 0.307142854, 0)
+AsuraX.ImagePassword.Size = UDim2.new(0, 15, 0, 13)
+AsuraX.ImagePassword.Image = "http://www.roblox.com/asset/?id=17569248270"
+AsuraX.ImagePassword.ImageTransparency = 0.300
+
+AsuraX.TextBoxPassword3.Name = "TextBoxPassword3"
+AsuraX.TextBoxPassword3.Parent = AsuraX.PasswordLogin
+AsuraX.TextBoxPassword3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextBoxPassword3.BackgroundTransparency = 1.000
+AsuraX.TextBoxPassword3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextBoxPassword3.BorderSizePixel = 0
+AsuraX.TextBoxPassword3.ClipsDescendants = true
+AsuraX.TextBoxPassword3.Position = UDim2.new(0.0378378034, 0, 0, 0)
+AsuraX.TextBoxPassword3.Size = UDim2.new(0, 157, 0, 35)
+AsuraX.TextBoxPassword3.ClearTextOnFocus = false
+AsuraX.TextBoxPassword3.Font = Enum.Font.Fantasy
+AsuraX.TextBoxPassword3.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+AsuraX.TextBoxPassword3.PlaceholderText = "Password"
+AsuraX.TextBoxPassword3.Text = ""
+AsuraX.TextBoxPassword3.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextBoxPassword3.TextSize = 14.000
+AsuraX.TextBoxPassword3.TextXAlignment = Enum.TextXAlignment.Left
+
+AsuraX.UIGradient17147_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(13, 13, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(38, 38, 38))}
+AsuraX.UIGradient17147_2.Rotation = 180
+AsuraX.UIGradient17147_2.Name = "UIGradient17147"
+AsuraX.UIGradient17147_2.Parent = AsuraX.PasswordLogin
+
+AsuraX.KeyLogin.Name = "KeyLogin"
+AsuraX.KeyLogin.Parent = AsuraX.LoginPanel
+AsuraX.KeyLogin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.KeyLogin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.KeyLogin.BorderSizePixel = 0
+AsuraX.KeyLogin.Position = UDim2.new(0.614554346, 0, 0.334775299, 0)
+AsuraX.KeyLogin.Size = UDim2.new(0, 215, 0, 35)
+
+AsuraX.UICorner78797.CornerRadius = UDim.new(0, 4)
+AsuraX.UICorner78797.Name = "UICorner78797"
+AsuraX.UICorner78797.Parent = AsuraX.KeyLogin
+
+AsuraX.TextBoxLogin1.Name = "TextBoxLogin1"
+AsuraX.TextBoxLogin1.Parent = AsuraX.KeyLogin
+AsuraX.TextBoxLogin1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextBoxLogin1.BackgroundTransparency = 1.000
+AsuraX.TextBoxLogin1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextBoxLogin1.BorderSizePixel = 0
+AsuraX.TextBoxLogin1.ClipsDescendants = true
+AsuraX.TextBoxLogin1.Position = UDim2.new(0.037837822, 0, 0, 0)
+AsuraX.TextBoxLogin1.Size = UDim2.new(0, 157, 0, 35)
+AsuraX.TextBoxLogin1.ClearTextOnFocus = false
+AsuraX.TextBoxLogin1.Font = Enum.Font.Fantasy
+AsuraX.TextBoxLogin1.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+AsuraX.TextBoxLogin1.PlaceholderText = "Login"
+AsuraX.TextBoxLogin1.Text = ""
+AsuraX.TextBoxLogin1.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextBoxLogin1.TextSize = 14.000
+AsuraX.TextBoxLogin1.TextXAlignment = Enum.TextXAlignment.Left
+
+AsuraX.ImageUsername.Name = "ImageUsername"
+AsuraX.ImageUsername.Parent = AsuraX.KeyLogin
+AsuraX.ImageUsername.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImageUsername.BackgroundTransparency = 1.000
+AsuraX.ImageUsername.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImageUsername.BorderSizePixel = 0
+AsuraX.ImageUsername.Position = UDim2.new(0.889629126, 0, 0.307142854, 0)
+AsuraX.ImageUsername.Size = UDim2.new(0, 15, 0, 13)
+AsuraX.ImageUsername.Image = "http://www.roblox.com/asset/?id=17569229862"
+AsuraX.ImageUsername.ImageTransparency = 0.300
+
+AsuraX.UIGradient787787.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(13, 13, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(38, 38, 38))}
+AsuraX.UIGradient787787.Rotation = 180
+AsuraX.UIGradient787787.Name = "UIGradient787787"
+AsuraX.UIGradient787787.Parent = AsuraX.KeyLogin
+
+AsuraX.Icons23.Name = "Icons"
+AsuraX.Icons23.Parent = AsuraX.LoginPanel
+
+AsuraX.Logo.Name = "Logo"
+AsuraX.Logo.Parent = AsuraX.Icons23
+AsuraX.Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.Logo.BackgroundTransparency = 1.000
+AsuraX.Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.Logo.BorderSizePixel = 0
+AsuraX.Logo.Position = UDim2.new(0.713623226, 0, 0.0692945942, 0)
+AsuraX.Logo.Size = UDim2.new(0, 95, 0, 90)
+AsuraX.Logo.Image = "rbxassetid://5689122363"
+AsuraX.Logo.ImageColor3 = Color3.fromRGB(189, 183, 255)
+
+AsuraX.UICorner_2414241.CornerRadius = UDim.new(0, 10)
+AsuraX.UICorner_2414241.Parent = AsuraX.Logo
+
+AsuraX.IconRememberSwitch.Name = "IconRememberSwitch"
+AsuraX.IconRememberSwitch.Parent = AsuraX.Icons23
+AsuraX.IconRememberSwitch.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.IconRememberSwitch.BackgroundTransparency = 1.000
+AsuraX.IconRememberSwitch.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.IconRememberSwitch.BorderSizePixel = 0
+AsuraX.IconRememberSwitch.Position = UDim2.new(0.898000002, 0, 0.536000013, 0)
+AsuraX.IconRememberSwitch.Size = UDim2.new(0, 16, 0, 16)
+AsuraX.IconRememberSwitch.Image = "http://www.roblox.com/asset/?id=17700625787"
+AsuraX.IconRememberSwitch.ImageColor3 = Color3.fromRGB(42, 41, 57)
+
+AsuraX.UICorner_3412414.CornerRadius = UDim.new(0, 10)
+AsuraX.UICorner_3412414.Parent = AsuraX.IconRememberSwitch
+
+AsuraX.Texts_4.Name = "Texts"
+AsuraX.Texts_4.Parent = AsuraX.LoginPanel
+
+AsuraX.TextAbout56.Name = "TextAbout56"
+AsuraX.TextAbout56.Parent = AsuraX.Texts_4
+AsuraX.TextAbout56.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextAbout56.BackgroundTransparency = 1.000
+AsuraX.TextAbout56.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextAbout56.BorderSizePixel = 0
+AsuraX.TextAbout56.Position = UDim2.new(0.653623223, 0, 0.22614108, 0)
+AsuraX.TextAbout56.Size = UDim2.new(0, 166, 0, 36)
+AsuraX.TextAbout56.Font = Enum.Font.Arial
+AsuraX.TextAbout56.Text = "Disable any Anti-Virus before"
+AsuraX.TextAbout56.TextColor3 = Color3.fromRGB(189, 183, 255)
+AsuraX.TextAbout56.TextSize = 14.000
+AsuraX.TextAbout56.TextTransparency = 0.100
+
+AsuraX.TextRemember.Name = "TextRemember"
+AsuraX.TextRemember.Parent = AsuraX.Texts_4
+AsuraX.TextRemember.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextRemember.BackgroundTransparency = 1.000
+AsuraX.TextRemember.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextRemember.BorderSizePixel = 0
+AsuraX.TextRemember.Position = UDim2.new(0.578548193, 0, 0.516597509, 0)
+AsuraX.TextRemember.Size = UDim2.new(0, 166, 0, 33)
+AsuraX.TextRemember.Font = Enum.Font.Arial
+AsuraX.TextRemember.Text = "Remember me"
+AsuraX.TextRemember.TextColor3 = Color3.fromRGB(74, 79, 99)
+AsuraX.TextRemember.TextSize = 14.000
+
+AsuraX.TextRememberSwitch.Name = "TextRememberSwitch"
+AsuraX.TextRememberSwitch.Parent = AsuraX.Texts_4
+AsuraX.TextRememberSwitch.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextRememberSwitch.BackgroundTransparency = 1.000
+AsuraX.TextRememberSwitch.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextRememberSwitch.BorderSizePixel = 0
+AsuraX.TextRememberSwitch.Position = UDim2.new(0.827797472, 0, 0.516597509, 0)
+AsuraX.TextRememberSwitch.Size = UDim2.new(0, 38, 0, 33)
+AsuraX.TextRememberSwitch.Font = Enum.Font.Arial
+AsuraX.TextRememberSwitch.Text = "OFF"
+AsuraX.TextRememberSwitch.TextColor3 = Color3.fromRGB(74, 79, 99)
+AsuraX.TextRememberSwitch.TextSize = 12.000
+
+AsuraX.TextForgot.Name = "TextForgot"
+AsuraX.TextForgot.Parent = AsuraX.Texts_4
+AsuraX.TextForgot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextForgot.BackgroundTransparency = 1.000
+AsuraX.TextForgot.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextForgot.BorderSizePixel = 0
+AsuraX.TextForgot.Position = UDim2.new(0.635605276, 0, 0.653526962, 0)
+AsuraX.TextForgot.Size = UDim2.new(0, 136, 0, 36)
+AsuraX.TextForgot.Font = Enum.Font.Arial
+AsuraX.TextForgot.Text = "Forgot your password"
+AsuraX.TextForgot.TextColor3 = Color3.fromRGB(86, 84, 118)
+AsuraX.TextForgot.TextSize = 14.000
+AsuraX.TextForgot.TextTransparency = 0.100
+
+AsuraX.TextForgot2.Name = "TextForgot2"
+AsuraX.TextForgot2.Parent = AsuraX.Texts_4
+AsuraX.TextForgot2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextForgot2.BackgroundTransparency = 1.000
+AsuraX.TextForgot2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextForgot2.BorderSizePixel = 0
+AsuraX.TextForgot2.Position = UDim2.new(0.77074039, 0, 0.653526962, 0)
+AsuraX.TextForgot2.Size = UDim2.new(0, 136, 0, 36)
+AsuraX.TextForgot2.Font = Enum.Font.Arial
+AsuraX.TextForgot2.Text = "Restore?"
+AsuraX.TextForgot2.TextColor3 = Color3.fromRGB(148, 145, 203)
+AsuraX.TextForgot2.TextSize = 12.000
+AsuraX.TextForgot2.TextTransparency = 0.100
+
+AsuraX.KeySystemLogin.Name = "KeySystemLogin"
+AsuraX.KeySystemLogin.Parent = AsuraX.LoginPanel
+AsuraX.KeySystemLogin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.KeySystemLogin.BackgroundTransparency = 1
+AsuraX.KeySystemLogin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.KeySystemLogin.BorderSizePixel = 0
+AsuraX.KeySystemLogin.Position = UDim2.new(0.616055846, 0, 0.334775299, 0)
+AsuraX.KeySystemLogin.Size = UDim2.new(0, 215, 0, 35)
+AsuraX.KeySystemLogin.Visible = false
+
+AsuraX.UICorner41412.CornerRadius = UDim.new(0, 4)
+AsuraX.UICorner41412.Name = "UICorner41412"
+AsuraX.UICorner41412.Parent = AsuraX.KeySystemLogin
+
+AsuraX.TextBoxLogin2.Name = "TextBoxLogin2"
+AsuraX.TextBoxLogin2.Parent = AsuraX.KeySystemLogin
+AsuraX.TextBoxLogin2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextBoxLogin2.BackgroundTransparency = 1.000
+AsuraX.TextBoxLogin2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.TextBoxLogin2.BorderSizePixel = 0
+AsuraX.TextBoxLogin2.ClipsDescendants = true
+AsuraX.TextBoxLogin2.Position = UDim2.new(0.037837822, 0, 0, 0)
+AsuraX.TextBoxLogin2.Size = UDim2.new(0, 157, 0, 35)
+AsuraX.TextBoxLogin2.ClearTextOnFocus = false
+AsuraX.TextBoxLogin2.Font = Enum.Font.Fantasy
+AsuraX.TextBoxLogin2.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+AsuraX.TextBoxLogin2.PlaceholderText = "Key:"
+AsuraX.TextBoxLogin2.Text = ""
+AsuraX.TextBoxLogin2.TextColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.TextBoxLogin2.TextSize = 14.000
+AsuraX.TextBoxLogin2.TextTransparency = 1
+AsuraX.TextBoxLogin2.TextXAlignment = Enum.TextXAlignment.Left
+
+AsuraX.ImageKeySystem.Name = "ImageKeySystem"
+AsuraX.ImageKeySystem.Parent = AsuraX.KeySystemLogin
+AsuraX.ImageKeySystem.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AsuraX.ImageKeySystem.BackgroundTransparency = 1.000
+AsuraX.ImageKeySystem.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AsuraX.ImageKeySystem.BorderSizePixel = 0
+AsuraX.ImageKeySystem.Position = UDim2.new(0.889629126, 0, 0.307142854, 0)
+AsuraX.ImageKeySystem.Size = UDim2.new(0, 13, 0, 13)
+AsuraX.ImageKeySystem.Image = "http://www.roblox.com/asset/?id=17710319375"
+AsuraX.ImageKeySystem.ImageTransparency = 1
+
+AsuraX.UIGradient41414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(13, 13, 13)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(38, 38, 38))}
+AsuraX.UIGradient41414.Rotation = 180
+AsuraX.UIGradient41414.Name = "UIGradient41414"
+AsuraX.UIGradient41414.Parent = AsuraX.KeySystemLogin
 
 AsuraX.AboutText4.Name = "AboutText4"
 AsuraX.AboutText4.Parent = AsuraX.Texts3
@@ -4908,7 +5868,7 @@ AsuraX.Sound3.Volume = 0.5
 
 -- Scripts:
 
-local Version = "0.3.6"
+local Version = "0.3.7"
 local UserInputService = game:GetService("UserInputService")
 local HttpService = game:GetService("HttpService")
 local MainGui = AsuraX.ScreenGui.MainFrame
@@ -4946,6 +5906,7 @@ local Button1List = false
 local Button2List = true
 local Button3List = false
 local Button4List = false
+local RememberMe = false
 local ScriptHubLoad = ""
 local HideName = "ExecutorFrame"
 local PanelFrameActive = false
@@ -5055,12 +6016,37 @@ local Sound3 = Instances.Sound3
 --function
 function LoadLogin()
 	PreviewLogin=false
+	game:GetService("TweenService"):Create(AsuraX.IconRememberSwitch,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.Logo,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustomImage39,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustomImage40,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustomImage38,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
 	game:GetService("TweenService"):Create(AsuraX.KeyLogin,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(AsuraX.PasswordLogin,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextBoxLogin1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextAbout56,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextRemember,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextRememberSwitch,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextForgot,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextForgot2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
 	game:GetService("TweenService"):Create(AsuraX.LoginFrame,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(AsuraX.ImageUsername,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
-	game:GetService("TweenService"):Create(AsuraX.ImagePassword,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
 	game:GetService("TweenService"):Create(AsuraX.TextLaunch,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustom41,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.ImageUsername,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustom39,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.PasswordLogin,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextBoxPassword3,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.ImagePassword,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustomImage41,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.KeySystemLogin,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextBoxLogin2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.ImageKeySystem,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustom40,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.KeyLogin2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.PasswordLogin2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.LoginFrame2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.ImageUsername2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.ImagePassword2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextLaunch2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
 	game:GetService("TweenService"):Create(AsuraX.TextBoxLogin,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
 	game:GetService("TweenService"):Create(AsuraX.TextBoxPassword,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
 	game:GetService("TweenService"):Create(AsuraX.TextPeople,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
@@ -5094,6 +6080,8 @@ function LoadLogin()
 	game:GetService("TweenService"):Create(AsuraX.FramePreviewCorner2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 	game:GetService("TweenService"):Create(AsuraX.DownGuiPreview,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
 	wait(0.2)
+	AsuraX.BackgroundMain.Visible=false
+	AsuraX.LoginGui.Visible=true
 	game:GetService("TweenService"):Create(AsuraX.LoadingBackground,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundTransparency = 0}):Play()
 	game:GetService("TweenService"):Create(AsuraX.LoadBar,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundTransparency = 0}):Play()
 	game:GetService("TweenService"):Create(AsuraX.LoadingBackground.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
@@ -5277,8 +6265,8 @@ local playerID = game.Players.LocalPlayer.Name
 local isAuthorized = false
 
 local function handleLogin()
-	local username = AsuraX.TextBoxLogin.Text
-	local password = AsuraX.TextBoxPassword.Text
+	local username = AsuraX.TextBoxLogin1.Text
+	local password = AsuraX.TextBoxPassword3.Text
 	for _, name in ipairs(UsersID) do
 		if name == playerID then
 			isAuthorized = true
@@ -5289,11 +6277,17 @@ local function handleLogin()
 	if users[username] and users[username] == password then
 			LoadLogin()
 			PreviewLogin=false
-	else
-
+		else
+			AsuraX.TextIncorrect.Text="Login incorrect"
+			game:GetService("TweenService"):Create(AsuraX.TextIncorrect,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{TextTransparency=0.1}):Play()
+			wait(2)
+			game:GetService("TweenService"):Create(AsuraX.TextIncorrect,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{TextTransparency=1}):Play()
 		end
 	else
-
+		AsuraX.TextIncorrect.Text="password incorrect"
+		game:GetService("TweenService"):Create(AsuraX.TextIncorrect,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{TextTransparency=0.1}):Play()
+		wait(2)
+		game:GetService("TweenService"):Create(AsuraX.TextIncorrect,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{TextTransparency=1}):Play()
 	end
 end
 
@@ -5302,25 +6296,26 @@ AsuraX.TextLaunch.MouseButton1Click:Connect(handleLogin)
 
 
 --buttonchecker
-if Configs.ExecutorSettings.AutoExec==true then
-	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button1Auto:TweenPosition(--Timer
-		UDim2.new(0, 2,0.074, 0),
-		"Out",
-		"Quad",
-		0.2,
-		false
-	)
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundColor3=Color3.fromRGB(79, 115, 102)}):Play()
-	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button2Auto:TweenPosition(--Timer
+if Configs.Settings.SaveFolder==false then
+MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button1SaveFile.MouseButton1Click:Connect(function()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button1SaveFile:TweenPosition(--Timer
 		UDim2.new(0, 2,0.889, 0),
 		"Out",
 		"Quad",
 		0.2,
 		false
 	)
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.Button1Auto,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(255, 255, 255)}):Play()
-	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Image324.UIGradient614.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
-	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button1Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundColor3=Color3.fromRGB(34, 34, 34)}):Play()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button2SaveFile:TweenPosition(--Timer
+		UDim2.new(0, 2,0.074, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.Button1.Button2SaveFile,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(115, 167, 127)}):Play()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button6Settings.ImageLabel.UIGradient414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 183, 184)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
+end)
 end
 if Configs.ExecutorSettings.AutoExec==true then
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button2Settings.Button1.Button1AutoExec:TweenPosition(--Timer
@@ -5362,7 +6357,9 @@ if Configs.Settings.TopMost==true then
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.ImageLabel.UIGradient031.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button3Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
 end
-if Configs.Settings.TopMost==true then
+
+if Configs.Settings.SaveTabs==true then
+MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button2SaveTabs.MouseButton1Click:Connect(function()
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button1SaveTabs:TweenPosition(--Timer
 		UDim2.new(0, 2,0.074, 0),
 		"Out",
@@ -5381,11 +6378,53 @@ if Configs.Settings.TopMost==true then
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.Button1SaveTabs,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(255, 255, 255)}):Play()
 	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.ImageLabel_2432.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(199, 255, 243)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(201, 255, 139))}
 	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button4Settings.Button1.UIStroke,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{Color = Color3.fromRGB(58, 111, 83)}):Play()
+    end)
+end
+if Configs.Settings.Multiinstance==false then
+MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button1Multi.MouseButton1Click:Connect(function()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button1Multi:TweenPosition(--Timer
+		UDim2.new(0, 2,0.889, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{BackgroundColor3=Color3.fromRGB(34, 34, 34)}):Play()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button2Multi:TweenPosition(--Timer
+		UDim2.new(0, 2,0.074, 0),
+		"Out",
+		"Quad",
+		0.2,
+		false
+	)
+	game:GetService("TweenService"):Create(MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.Button1.Button2Multi,TweenInfo.new(0.2,Enum.EasingStyle.Linear),{ImageColor3=Color3.fromRGB(115, 167, 127)}):Play()
+	MainGui.SettingsFrame.HubFrame.ScrollingFrame3.Button8Settings.ImageLabel.UIGradient414.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 183, 184)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 92))}
+	end)
 end
 
 if NoPass==true then
 	AsuraX.MainFrame.Visible = true
 	AsuraX.LoginGui.Visible = false
+	if Configs.ExecutorSettings.AutoInject==true then
+		if HttpsGameGet==true then
+			Injecting=true
+			TextNotify="Attaching."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
+			wait(3)
+			Injecting=false
+			Attached=true
+		elseif HttpsGameGet==false then
+			TextNotify="Cannot inject in roblox studio"
+			ImageID="rbxassetid://12988744896"
+			NotifyColor=Color3.new(1, 0.584314, 0.223529)
+			Notify()
+		end
+
+	elseif Configs.ExecutorSettings.AutoInject==false then
+
+	end
 end
 --version uwu
 
@@ -5423,7 +6462,7 @@ local Tab6Active=false
 				
 				print("UNC Environment Check")
 				
-				print("✅ - Pass, ⛔ - Fail, ⏺️ - No test, ⚠️ - Missing aliases")
+				print("\n✅ - Pass, ⛔ - Fail, ⏺️ - No test, ⚠️ - Missing aliases")
 				
 				print("✅ cache.invalidate")
 				print("✅ cache.iscached")
@@ -5533,8 +6572,8 @@ local Tab6Active=false
 				print("✅ cleardrawcache")
 				print("⏺️ WebSocket")
 				print("✅ WebSocket.connect")
-				print("✅ request + User-agent: Asurax/v3.5")
-				print("✅ setfpscap + 60fps 60 + 60fps 59")
+				print("✅ request • User-agent: Asurax/v3.5")
+				print("✅ setfpscap • 67fps @60 • 60fps @0")
 				print(" ")
 				
 				print("Unc Summary")
@@ -8696,24 +9735,20 @@ end
 
 local player = game.Players.LocalPlayer
 
--- Assuming you have a TextLabel named "TextLabel" inside the ScreenGui
+
 local Playerusername= MainGui.PanelFrame.HubFrame3.Buttons3.Button2Panel:WaitForChild("TextUsername")
 local Playerusername2 = MainGui.PanelFrame.HubFrame3.Buttons3.Button2Panel:WaitForChild("TextUsername2")
 
--- Retrieve the username and display name
+
 local username = player.Name
 local displayName = player.DisplayName
 
--- Set the text of the TextLabel to show the username and display name
+
 Playerusername.Text = displayName
 Playerusername2.Text = username
 
 function ScriptLoad()
 	if HttpsGameGet==true then
-	TextNotify="Executed."
-	ImageID="rbxassetid://9405926389"
-	NotifyColor=Color3.new(255, 255, 255)
-	Notify()
 	if ScriptHubLoad=="Vape" then
 		if ExecutorName=="Solara" then
 				TextNotify="Vape not supported solara"
@@ -8724,39 +9759,119 @@ function ScriptLoad()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))
 		end
 	elseif ScriptHubLoad=="DomainX" then
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
 	elseif ScriptHubLoad=="Sirius" then
-		loadstring(game:HttpGet('https://sirius.menu/script'))()
+			loadstring(game:HttpGet('https://sirius.menu/script'))()
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
 	elseif ScriptHubLoad=="ADustyTrip" then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/artemy133563/Utilities/main/ADustyTrip",true))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/artemy133563/Utilities/main/ADustyTrip",true))()
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
 	elseif ScriptHubLoad=="ADMINUS Devil Fruit Sniper V2" then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/flerci42/Adminus_FruitSniper_V2/main/.lua", true))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/flerci42/Adminus_FruitSniper_V2/main/.lua", true))()
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
 	elseif ScriptHubLoad=="AlphaXHub" then
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/zAlpha07/Loader-Main-/main/AlphaXHubWorking.Lua'))()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/zAlpha07/Loader-Main-/main/AlphaXHubWorking.Lua'))()
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
 	elseif ScriptHubLoad=="Primordial" then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bovanlaarhoven/Primordial/main/src/loader.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Bovanlaarhoven/Primordial/main/src/loader.lua"))()
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
 	elseif ScriptHubLoad=="InfiniteYield" then
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
 	elseif ScriptHubLoad=="MySploit" then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/wuhaz/MySploit/main/Arsenal.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/wuhaz/MySploit/main/Arsenal.lua"))()
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
     elseif ScriptHubLoad=="NinjaLegendsOP" then--key
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ImPocky/PockyHub/main/Scripts/load.txt"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ImPocky/PockyHub/main/Scripts/load.txt"))()
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
 	elseif ScriptHubLoad=="DarkHubV2" then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/D8rkX/D8rk-Hub/main/Games/Evade.lua",true))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/D8rkX/D8rk-Hub/main/Games/Evade.lua",true))()
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
 	elseif ScriptHubLoad=="MurderMysteryV2" then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Pa1nx/MurderMystery2ScriptTESTING/main/TestFile"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Pa1nx/MurderMystery2ScriptTESTING/main/TestFile"))()
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
 	elseif ScriptHubLoad=="PrisonLife" then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaohubPrisonLife"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaohubPrisonLife"))()
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
 	elseif ScriptHubLoad=="TowerOfHell" then
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/SpedCoding/Delta-Hub/main/Framework"))()
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
 	elseif ScriptHubLoad=="BuildAboatAutoFarm" then
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
 	elseif ScriptHubLoad=="DeathBall" then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/sirapobsriumang/Death-Bal/main/Op-Script-by-me"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/sirapobsriumang/Death-Bal/main/Op-Script-by-me"))()
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
 	elseif ScriptHubLoad=="NamelessAdmin" then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
-	--elseif ScriptHubLoad=="" then
-		
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
+	elseif ScriptHubLoad=="BladeBall" then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/autoparry.lua"))()
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
+		elseif ScriptHubLoad=="BloxHunt" then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/AsuraXowner/bladeball/main/bladeball",true))();
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
+		elseif ScriptHubLoad=="Doors" then
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/mazzikasjjzjzj/Key/main/DOORS%20%20%5BNEW%5D'))()
+			TextNotify="Executed."
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(255, 255, 255)
+			Notify()
 	else
 		warn("no script to ran probably error with executor report to dev!")
 		end
@@ -11084,7 +12199,7 @@ local function dragUI(frame)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 then
 			dragging2 = true
 			dragStart2 = input.Position
-			startPos2 = frame.Position
+			startPos2 = AsuraX.BackgroundMain.Position
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
 					dragging2 = false
@@ -11093,15 +12208,16 @@ local function dragUI(frame)
 		end
 	end)
 
-	frame.InputChanged:Connect(function(input)
+	AsuraX.BackgroundMain.InputChanged:Connect(function(input)
 		if dragging2 and input.UserInputType == Enum.UserInputType.MouseMovement then
 			local delta = input.Position - dragStart2
-			frame.Position = UDim2.new(startPos2.X.Scale, startPos2.X.Offset + delta.X, startPos2.Y.Scale, startPos2.Y.Offset + delta.Y)
+			AsuraX.BackgroundMain.Position = UDim2.new(startPos2.X.Scale, startPos2.X.Offset + delta.X, startPos2.Y.Scale, startPos2.Y.Offset + delta.Y)
 		end
 	end)
 end
 
-dragUI(AsuraX.LoginGui)
+--dragUI(AsuraX.BackgroundMain)
+dragUI(AsuraX.BackgroundImage)
 
 
 --script hub
@@ -11315,6 +12431,43 @@ MainGui.ScriptFrame.HubFrame.Frame.ScrollingFrame.GameFrame14.RanButton.MouseBut
 		Notify()
 	end
 end)
+
+MainGui.ScriptFrame.HubFrame.Frame.ScrollingFrame.GameFrame15.RanButton166.MouseButton1Click:Connect(function()
+	if Attached==true then
+		ScriptHubLoad="BloxHunt"
+		ScriptLoad()
+	elseif Attached==false then
+		TextNotify="Not attached"
+		ImageID="rbxassetid://9405926389"
+		NotifyColor=Color3.new(255, 255, 255)
+		Notify()
+	end
+end)
+
+MainGui.ScriptFrame.HubFrame.Frame.ScrollingFrame.GameFrame16.RanButton144.MouseButton1Click:Connect(function()
+	if Attached==true then
+		ScriptHubLoad="BladeBall"
+		ScriptLoad()
+	elseif Attached==false then
+		TextNotify="Not attached"
+		ImageID="rbxassetid://9405926389"
+		NotifyColor=Color3.new(255, 255, 255)
+		Notify()
+	end
+end)
+
+MainGui.ScriptFrame.HubFrame.Frame.ScrollingFrame.GameFrame17.RanButton.MouseButton1Click:Connect(function()
+	if Attached==true then
+		ScriptHubLoad="Doors"
+		ScriptLoad()
+	elseif Attached==false then
+		TextNotify="Not attached"
+		ImageID="rbxassetid://9405926389"
+		NotifyColor=Color3.new(255, 255, 255)
+		Notify()
+	end
+end)
+
 --panelframebuttons
 MainGui.PanelFrame.HubFrame3.Buttons3.Button3Panel.Image3244.MouseButton1Click:Connect(function()
 	setclipboard("P4XBw7vQVU")
@@ -11337,6 +12490,21 @@ MainGui.PanelFrame.HubFrame3.Buttons3.Button4Panel.Image3247.MouseButton1Click:C
 	Notify()
 end)
 --
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local userId = player.UserId
+local imageSize = Enum.ThumbnailSize.Size420x420
+local thumbnailType = Enum.ThumbnailType.HeadShot
+
+local function updateProfilePicture()
+	local thumbnailUrl = Players:GetUserThumbnailAsync(userId, thumbnailType, imageSize)
+	
+	MainGui.PanelFrame.HubFrame3.Buttons3.Button2Panel.Image3245.Image = thumbnailUrl
+end
+
+updateProfilePicture()
+
+
 --yes smooth.
 MainGui.ExecutorFrame.DownGui.ExecuteFrame.ImageButton.MouseEnter:Connect(function()
 	game:GetService("TweenService"):Create(MainGui.ExecutorFrame.DownGui.ExecuteFrame,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0.1}):Play()
@@ -11546,7 +12714,7 @@ end
 
 UserInputService.InputBegan:Connect(function(input, gameProccesedEvent)
 	if input.KeyCode == KeybindMenu then
-		if Configs.Settings.KeybindMenuActive==true then
+		if Configs.Settings.KeybindMenuActive==true and AsuraX.LoginGui.Visible==false then
 			if UserInputService:GetFocusedTextBox() ~= nil then return end
 			if GuiHidden == false then
 				MainGui.ExecutorFrame.DownGui.ExecuteFrame.BackgroundTransparency = 1
@@ -11790,88 +12958,88 @@ MainGui.ExecutorFrame.DownGui.AttachFrame.ImageButton.MouseButton1Click:Connect(
 		Notify()
 	end
 end)
-	while true do
-		wait(0.1)
-	MainGui.ExecutorFrame.ListGui.ADDTabFrame.ADDTab.MouseButton1Click:Connect(function()
-		TabAdd()
-	end)
 
+local function updateTabs()
 	if Tab2Active==true then
 		MainGui.ExecutorFrame.ListGui["Editor#2"].RemoveIcon.MouseButton1Click:Connect(function()
 			MainGui.ExecutorFrame.ListGui["Editor#2"]:Destroy()
-			Tab2Active=false
+			Tab2Active = false
 			ExecutorText.Visible = true
 			ExecutorText2.Visible = false
 			ExecutorText3.Visible = false
 			ExecutorText4.Visible = false
 			ExecutorText5.Visible = false
 			ExecutorText6.Visible = false
-			TabOpen=1
+			TabOpen = 1
 			TabNumber = TabNumber - 1
 			updateLineCount()
 		end)
 	end
+
 	if Tab3Active==true then
 		MainGui.ExecutorFrame.ListGui["Editor#3"].RemoveIcon.MouseButton1Click:Connect(function()
 			MainGui.ExecutorFrame.ListGui["Editor#3"]:Destroy()
-			Tab3Active=false
+			Tab3Active = false
 			ExecutorText.Visible = false
 			ExecutorText2.Visible = true
 			ExecutorText3.Visible = false
 			ExecutorText4.Visible = false
 			ExecutorText5.Visible = false
 			ExecutorText6.Visible = false
-			TabOpen=2
+			TabOpen = 2
 			TabNumber = TabNumber - 1
 			updateLineCount()
 		end)
 	end
+
 	if Tab4Active==true then
 		MainGui.ExecutorFrame.ListGui["Editor#4"].RemoveIcon.MouseButton1Click:Connect(function()
 			MainGui.ExecutorFrame.ListGui["Editor#4"]:Destroy()
-			Tab4Active=false
+			Tab4Active = false
 			ExecutorText.Visible = false
 			ExecutorText2.Visible = false
 			ExecutorText3.Visible = true
 			ExecutorText4.Visible = false
 			ExecutorText5.Visible = false
 			ExecutorText6.Visible = false
-			TabOpen=3
+			TabOpen = 3
 			TabNumber = TabNumber - 1
 			updateLineCount()
 		end)
 	end
+
 	if Tab5Active==true then
 		MainGui.ExecutorFrame.ListGui["Editor#5"].RemoveIcon.MouseButton1Click:Connect(function()
 			MainGui.ExecutorFrame.ListGui["Editor#5"]:Destroy()
-			Tab5Active=false
+			Tab5Active = false
 			ExecutorText.Visible = false
 			ExecutorText2.Visible = false
 			ExecutorText3.Visible = false
 			ExecutorText4.Visible = true
 			ExecutorText5.Visible = false
 			ExecutorText6.Visible = false
-			TabOpen=4
+			TabOpen = 4
 			TabNumber = TabNumber - 1
 			updateLineCount()
 		end)
 	end
+
 	if Tab6Active==true then
 		MainGui.ExecutorFrame.ListGui["Editor#6"].RemoveIcon.MouseButton1Click:Connect(function()
 			MainGui.ExecutorFrame.ListGui["Editor#6"]:Destroy()
-			Tab6Active=false
+			Tab6Active = false
 			ExecutorText.Visible = false
 			ExecutorText2.Visible = false
 			ExecutorText3.Visible = false
 			ExecutorText4.Visible = false
 			ExecutorText5.Visible = true
 			ExecutorText6.Visible = false
-			TabOpen=5
+			TabOpen = 5
 			TabNumber = TabNumber - 1
 			updateLineCount()
 		end)
 	end
-	
+
 	if Tab1Active==true then
 		MainGui.ExecutorFrame.ListGui["Editor#1"].TextButton.MouseButton1Click:Connect(function()
 			ExecutorText.Visible = true
@@ -11881,9 +13049,10 @@ end)
 			ExecutorText5.Visible = false
 			ExecutorText6.Visible = false
 			updateLineCount()
-			TabOpen=1
+			TabOpen = 1
 		end)
 	end
+
 	if Tab2Active==true then
 		MainGui.ExecutorFrame.ListGui["Editor#2"].TextButton.MouseButton1Click:Connect(function()
 			ExecutorText.Visible = false
@@ -11893,9 +13062,10 @@ end)
 			ExecutorText5.Visible = false
 			ExecutorText6.Visible = false
 			updateLineCount()
-			TabOpen=2
+			TabOpen = 2
 		end)
 	end
+
 	if Tab3Active==true then
 		MainGui.ExecutorFrame.ListGui["Editor#3"].TextButton.MouseButton1Click:Connect(function()
 			ExecutorText.Visible = false
@@ -11905,9 +13075,10 @@ end)
 			ExecutorText5.Visible = false
 			ExecutorText6.Visible = false
 			updateLineCount()
-			TabOpen=2
+			TabOpen = 3
 		end)
 	end
+
 	if Tab4Active==true then
 		MainGui.ExecutorFrame.ListGui["Editor#4"].TextButton.MouseButton1Click:Connect(function()
 			ExecutorText.Visible = false
@@ -11917,9 +13088,10 @@ end)
 			ExecutorText5.Visible = false
 			ExecutorText6.Visible = false
 			updateLineCount()
-			TabOpen=2
+			TabOpen = 4
 		end)
 	end
+
 	if Tab5Active==true then
 		MainGui.ExecutorFrame.ListGui["Editor#5"].TextButton.MouseButton1Click:Connect(function()
 			ExecutorText.Visible = false
@@ -11929,9 +13101,10 @@ end)
 			ExecutorText5.Visible = true
 			ExecutorText6.Visible = false
 			updateLineCount()
-			TabOpen=2
+			TabOpen = 5
 		end)
 	end
+
 	if Tab6Active==true then
 		MainGui.ExecutorFrame.ListGui["Editor#6"].TextButton.MouseButton1Click:Connect(function()
 			ExecutorText.Visible = false
@@ -11941,9 +13114,346 @@ end)
 			ExecutorText5.Visible = false
 			ExecutorText6.Visible = true
 			updateLineCount()
-			TabOpen=2
+			TabOpen = 6
 		end)
 	end
+end
+
+updateTabs()
+
+local function setupEventHandlers()
+	if MainGui and MainGui:FindFirstChild("ExecutorFrame") and MainGui.ExecutorFrame:FindFirstChild("ListGui") and MainGui.ExecutorFrame.ListGui:FindFirstChild("ADDTabFrame") and MainGui.ExecutorFrame.ListGui.ADDTabFrame:FindFirstChild("ADDTab") then
+		MainGui.ExecutorFrame.ListGui.ADDTabFrame.ADDTab.MouseButton1Click:Connect(function()
+			--TabAdd()  -- Call the TabAdd function when the button is clicked
+			TextNotify="Tab system disabled"
+			ImageID="rbxassetid://9405926389"
+			NotifyColor=Color3.new(1, 0.466667, 0)
+			Notify()
+		end)
+		--print("Event handlers set up successfully.")
+	else
+		--warn("One or more elements in the path MainGui.ExecutorFrame.ListGui.ADDTabFrame.ADDTab are not found")
+	end
+end
+
+setupEventHandlers()
+
+function UpdateUIForPreviewLogin()
+	AsuraX.ImagePreview1.Image = "rbxassetid://17568658832"
+	AsuraX.ImagePreview2.Image = "rbxassetid://17568658832"
+	AsuraX.ImagePreview3.Image = "rbxassetid://17568725112"
+	AsuraX.ImagePreview4.Image = "rbxassetid://17568737123"
+	AsuraX.ImagePreview5.Image = "rbxassetid://17568642909"
+
+	game:GetService("TweenService"):Create(AsuraX.Button1Preview, TweenInfo.new(0.1, Enum.EasingStyle.Linear), {BackgroundColor3 = Color3.fromRGB(79, 76, 125)}):Play()
+	game:GetService("TweenService"):Create(AsuraX.Button2Preview, TweenInfo.new(0.1, Enum.EasingStyle.Linear), {BackgroundColor3 = Color3.fromRGB(52, 52, 52)}):Play()
+	game:GetService("TweenService"):Create(AsuraX.Button3Preview, TweenInfo.new(0.1, Enum.EasingStyle.Linear), {BackgroundColor3 = Color3.fromRGB(52, 52, 52)}):Play()
+	game:GetService("TweenService"):Create(AsuraX.Button4Preview, TweenInfo.new(0.1, Enum.EasingStyle.Linear), {BackgroundColor3 = Color3.fromRGB(52, 52, 52)}):Play()
+
+	-- Add other tweening animations here
+
+	-- Wait for some time before applying further changes
+	wait(5)
+
+	-- Apply additional changes after waiting
+	AsuraX.ImagePreview1.Image = "rbxassetid://17568766805"
+	AsuraX.ImagePreview2.Image = "rbxassetid://17568749331"
+	AsuraX.ImagePreview3.Image = "rbxassetid://17578371436"
+	AsuraX.ImagePreview4.Image = "rbxassetid://17578377435"
+	AsuraX.ImagePreview5.Image = "rbxassetid://17578381425"
+
+	-- Add other changes after waiting
+end
+
+-- Check if PreviewLogin is true, then update UI
+--if PreviewLogin == true then
+	--UpdateUIForPreviewLogin()
+--end
+
+--login
+
+AsuraX.TextRemember.MouseEnter:Connect(function()
+	if RememberMe==false then
+	game:GetService("TweenService"):Create(AsuraX.TextRemember,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(191, 204, 255)}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(191, 204, 255)}):Play()
+		end
+end)
+
+AsuraX.TextRemember.MouseLeave:Connect(function()
+	if RememberMe==false then
+	game:GetService("TweenService"):Create(AsuraX.TextRemember,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(74, 79, 99)}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(74, 79, 99)}):Play()
+	end	
+end)
+
+AsuraX.TextRememberSwitch.MouseEnter:Connect(function()
+	if RememberMe==false then
+	game:GetService("TweenService"):Create(AsuraX.TextRemember,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(191, 204, 255)}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(191, 204, 255)}):Play()
+	end	
+end)
+
+AsuraX.TextRememberSwitch.MouseLeave:Connect(function()
+	if RememberMe==false then
+	game:GetService("TweenService"):Create(AsuraX.TextRemember,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(74, 79, 99)}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(74, 79, 99)}):Play()
+	end
+end)
+
+AsuraX.IconRememberSwitch.MouseEnter:Connect(function()
+	if RememberMe==false then
+	game:GetService("TweenService"):Create(AsuraX.TextRemember,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(191, 204, 255)}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(191, 204, 255)}):Play()
+	end
+end)
+
+AsuraX.IconRememberSwitch.MouseLeave:Connect(function()
+	if RememberMe==false then
+	game:GetService("TweenService"):Create(AsuraX.TextRemember,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(74, 79, 99)}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(74, 79, 99)}):Play()
+	end
+end)
+
+AsuraX.IconRememberSwitch.MouseButton1Click:Connect(function()
+	if RememberMe==false then
+	AsuraX.TextRememberSwitch.Text = "ON"
+	game:GetService("TweenService"):Create(AsuraX.TextRemember,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(177, 177, 177)}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(177, 177, 177)}):Play()
+	game:GetService("TweenService"):Create(AsuraX.IconRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{ImageColor3 = Color3.fromRGB(177, 177, 177)}):Play()
+	RememberMe=true
+	elseif RememberMe==true then
+	AsuraX.TextRememberSwitch.Text = "OFF"
+	game:GetService("TweenService"):Create(AsuraX.TextRemember,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(74, 79, 99)}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(74, 79, 99)}):Play()
+	game:GetService("TweenService"):Create(AsuraX.IconRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{ImageColor3 = Color3.fromRGB(42, 41, 57)}):Play()
+	RememberMe=false
+	end
+end)
+AsuraX.TextRememberSwitch.MouseButton1Click:Connect(function()
+	if RememberMe==false then
+		AsuraX.TextRememberSwitch.Text = "ON"
+		game:GetService("TweenService"):Create(AsuraX.TextRemember,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(177, 177, 177)}):Play()
+		game:GetService("TweenService"):Create(AsuraX.TextRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(177, 177, 177)}):Play()
+		game:GetService("TweenService"):Create(AsuraX.IconRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{ImageColor3 = Color3.fromRGB(177, 177, 177)}):Play()
+		RememberMe=true
+	elseif RememberMe==true then
+		AsuraX.TextRememberSwitch.Text = "OFF"
+		game:GetService("TweenService"):Create(AsuraX.TextRemember,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(74, 79, 99)}):Play()
+		game:GetService("TweenService"):Create(AsuraX.TextRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(74, 79, 99)}):Play()
+		game:GetService("TweenService"):Create(AsuraX.IconRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{ImageColor3 = Color3.fromRGB(42, 41, 57)}):Play()
+		RememberMe=false
+	end
+end)
+AsuraX.TextRemember.MouseButton1Click:Connect(function()
+	if RememberMe==false then
+		AsuraX.TextRememberSwitch.Text = "ON"
+		game:GetService("TweenService"):Create(AsuraX.TextRemember,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(177, 177, 177)}):Play()
+		game:GetService("TweenService"):Create(AsuraX.TextRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(177, 177, 177)}):Play()
+		game:GetService("TweenService"):Create(AsuraX.IconRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{ImageColor3 = Color3.fromRGB(177, 177, 177)}):Play()
+		RememberMe=true
+	elseif RememberMe==true then
+		AsuraX.TextRememberSwitch.Text = "OFF"
+		game:GetService("TweenService"):Create(AsuraX.TextRemember,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(74, 79, 99)}):Play()
+		game:GetService("TweenService"):Create(AsuraX.TextRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{TextColor3 = Color3.fromRGB(74, 79, 99)}):Play()
+		game:GetService("TweenService"):Create(AsuraX.IconRememberSwitch,TweenInfo.new(0.3,Enum.EasingStyle.Linear),{ImageColor3 = Color3.fromRGB(42, 41, 57)}):Play()
+		RememberMe=false
+	end
+end)
+
+AsuraX.ButtonPress1.MouseButton1Click:Connect(function()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustomImage39,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustomImage40,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustomImage38,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+	game:GetService("TweenService"):Create(AsuraX.KeyLogin,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextBoxLogin1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.ImageUsername,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustom39,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.PasswordLogin,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextBoxPassword3,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.ImagePassword,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustomImage41,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.KeySystemLogin,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextBoxLogin2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.ImageKeySystem,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustom40,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	AsuraX.LoginFrame:TweenPosition(
+		UDim2.new(0.616, 0,0.381, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.TextForgot:TweenPosition(
+		UDim2.new(0.615, 0,0.431, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.TextForgot2:TweenPosition(
+		UDim2.new(0.75, 0,0.431, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.TextRemember:TweenPosition(
+		UDim2.new(0.579, 0,0.307, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.TextRememberSwitch:TweenPosition(
+		UDim2.new(0.827, 0,0.307, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.IconRememberSwitch:TweenPosition(
+		UDim2.new(0.898, 0,0.324, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.KeyLogin.Visible=false
+	AsuraX.PasswordLogin.Visible=false
+	AsuraX.KeySystemLogin.Visible=false
+end)
+
+AsuraX.ButtonPress2.MouseButton1Click:Connect(function()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustomImage39,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustomImage40,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustomImage38,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.KeyLogin,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextBoxLogin1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.ImageUsername,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustom39,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.PasswordLogin,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextBoxPassword3,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.ImagePassword,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustomImage41,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	AsuraX.KeySystemLogin.Visible=true
+	game:GetService("TweenService"):Create(AsuraX.KeySystemLogin,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextBoxLogin2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(AsuraX.ImageKeySystem,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0.3}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustom40,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+	AsuraX.LoginFrame:TweenPosition(
+		UDim2.new(0.616, 0,0.481, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.TextForgot:TweenPosition(
+		UDim2.new(0.615, 0,0.531, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.TextForgot2:TweenPosition(
+		UDim2.new(0.75, 0,0.531, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.TextRemember:TweenPosition(
+		UDim2.new(0.579, 0,0.407, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.TextRememberSwitch:TweenPosition(
+		UDim2.new(0.827, 0,0.407, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.IconRememberSwitch:TweenPosition(
+		UDim2.new(0.898, 0,0.424, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.KeyLogin.Visible=false
+	AsuraX.PasswordLogin.Visible=false
+end)
+
+AsuraX.ButtonPress3.MouseButton1Click:Connect(function()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustomImage39,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustomImage40,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustomImage38,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	AsuraX.LoginFrame:TweenPosition(
+		UDim2.new(0.616, 0,0.6, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.TextForgot:TweenPosition(
+		UDim2.new(0.636, 0,0.654, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.TextForgot2:TweenPosition(
+		UDim2.new(0.771, 0,0.654, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.TextRemember:TweenPosition(
+		UDim2.new(0.579, 0,0.517, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.TextRememberSwitch:TweenPosition(
+		UDim2.new(0.828, 0,0.517, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.IconRememberSwitch:TweenPosition(
+		UDim2.new(0.898, 0,0.536, 0),
+		"Out",
+		"Quad",
+		0.3,
+		false
+	)
+	AsuraX.KeyLogin.Visible=true
+	AsuraX.PasswordLogin.Visible=true
+	game:GetService("TweenService"):Create(AsuraX.KeyLogin,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextBoxLogin1,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(AsuraX.ImageUsername,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0.3}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustom39,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+	game:GetService("TweenService"):Create(AsuraX.PasswordLogin,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextBoxPassword3,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(AsuraX.ImagePassword,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 0.3}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustomImage41,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
+	game:GetService("TweenService"):Create(AsuraX.KeySystemLogin,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{BackgroundTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.TextBoxLogin2,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.ImageKeySystem,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{ImageTransparency = 1}):Play()
+	game:GetService("TweenService"):Create(AsuraX.UIStrokeCustom40,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 1}):Play()
+	AsuraX.KeySystemLogin.Visible=false
+end)
+
+
+
+
+	--[[while true do
+		wait(0.1)
 	--[[if PreviewLogin==true then
 		AsuraX.ImagePreview1.Image = "rbxassetid://17568658832"
 		AsuraX.ImagePreview2.Image = "rbxassetid://17568658832"
@@ -12013,7 +13523,7 @@ end)
 		game:GetService("TweenService"):Create(AsuraX.ImagePreview4.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
 		game:GetService("TweenService"):Create(AsuraX.ImagePreview5.UIStroke,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{Transparency = 0}):Play()
 		wait(5)
-	end--]]
+	end
 	--scriptframe
 	if fps and fps > 0 then
 		setFrameRate(fps)
@@ -12021,4 +13531,4 @@ end)
 		--print("Invalid FPS value. Setting default frame rate to 60.")
 		setFrameRate(60)
 	end
-end
+end--]]
